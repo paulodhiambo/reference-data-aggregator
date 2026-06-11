@@ -289,7 +289,7 @@ sequenceDiagram
         A->>D: persist snapshot JSON
         A->>A: hash-compare vs previous → emit delta audit events
     else any failure
-        A->>Sch: log + alert; previous snapshot remains live
+        A->>Sch: log + alert, previous snapshot remains live
     end
 ```
 
