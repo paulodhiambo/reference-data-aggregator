@@ -1,4 +1,3 @@
----
 # k8s/statefulset.yaml
 # StatefulSet (not Deployment) so each pod gets its own PVC for the local snapshot restore (architecture §6.3).
 apiVersion: apps/v1
@@ -69,56 +68,3 @@ spec:
         resources:
           requests:
             storage: 50Mi
----
-# k8s/service.yaml
-apiVersion: v1
-kind: Service
-metadata:
-  name: rdas
-  labels:
-    app: rdas
-spec:
-  selector:
-    app: rdas
-  ports:
-    - port: 80
-      targetPort: 8080
-      name: http
-  type: ClusterIP
----
-# k8s/hpa.yaml
-apiVersion: autoscaling/v2
-kind: HorizontalPodAutoscaler
-metadata:
-  name: rdas-hpa
-spec:
-  scaleTargetRef:
-    apiVersion: apps/v1
-    kind: StatefulSet
-    name: rdas
-  minReplicas: 3
-  maxReplicas: 10
-  metrics:
-    - type: Resource
-      resource:
-        name: cpu
-        target:
-          type: Utilization
-          averageUtilization: 70
-    - type: Resource
-      resource:
-        name: memory
-        target:
-          type: Utilization
-          averageUtilization: 80
----
-# k8s/pdb.yaml — Ensures at least 2 pods remain during rolling updates/outages
-apiVersion: policy/v1
-kind: PodDisruptionBudget
-metadata:
-  name: rdas-pdb
-spec:
-  minAvailable: 2
-  selector:
-    matchLabels:
-      app: rdas
