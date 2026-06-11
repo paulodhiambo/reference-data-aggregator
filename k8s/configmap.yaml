@@ -1,16 +1,14 @@
----
-# k8s/configmap.yaml — External configuration for RDAS
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: rdas-config
+  name: reference-data-aggregator-config
   labels:
-    app: rdas
+    app: reference-data-aggregator
 data:
   RDAS_SOAP_ENDPOINT: "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso"
   RDAS_CACHE_REFRESH_CRON: "0 0 */12 * * *"
   RDAS_CACHE_RETRY_CRON: "0 0 * * * *"
   RDAS_CACHE_STALE_THRESHOLD_HOURS: "48"
-  RDAS_CACHE_SNAPSHOT_PATH: "/data/snapshot/rdas_snapshot.json"
+  RDAS_CACHE_SNAPSHOT_PATH: "/data/snapshot/reference_data_aggregator_snapshot.json"
   RDAS_QUERY_CACHE_MAX_SIZE: "5000"
   RDAS_QUERY_CACHE_TTL_MINUTES: "10"

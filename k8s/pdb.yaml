@@ -1,9 +1,9 @@
 apiVersion: policy/v1
 kind: PodDisruptionBudget
 metadata:
-  name: rdas-pdb
+  name: reference-data-aggregator-pdb
 spec:
   minAvailable: 2
   selector:
     matchLabels:
-      app: rdas
+      app: reference-data-aggregator

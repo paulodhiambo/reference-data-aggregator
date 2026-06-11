@@ -1,12 +1,12 @@
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
-  name: rdas-hpa
+  name: reference-data-aggregator-hpa
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: StatefulSet
-    name: rdas
+    name: reference-data-aggregator
   minReplicas: 3
   maxReplicas: 10
   metrics:

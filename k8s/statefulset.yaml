@@ -3,37 +3,37 @@
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  name: rdas
+  name: reference-data-aggregator
   labels:
-    app: rdas
+    app: reference-data-aggregator
 spec:
-  serviceName: rdas
+  serviceName: reference-data-aggregator
   replicas: 3
   selector:
     matchLabels:
-      app: rdas
+      app: reference-data-aggregator
   template:
     metadata:
       labels:
-        app: rdas
+        app: reference-data-aggregator
     spec:
       securityContext:
         runAsNonRoot: true
         runAsUser: 1000
         fsGroup: 1000
       containers:
-        - name: rdas
-          image: loopdfs/rdas:1.2.0
+        - name: reference-data-aggregator
+          image: loopdfs/reference-data-aggregator:1.2.0
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
               name: http
           envFrom:
             - configMapRef:
-                name: rdas-config
+                name: reference-data-aggregator-config
           env:
             - name: SPRING_APPLICATION_NAME
-              value: rdas
+              value: reference-data-aggregator
           resources:
             requests:
               cpu: "250m"

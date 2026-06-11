@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: rdas
+  name: reference-data-aggregator
   labels:
-    app: rdas
+    app: reference-data-aggregator
 spec:
   selector:
-    app: rdas
+    app: reference-data-aggregator
   ports:
     - port: 80
       targetPort: 8080

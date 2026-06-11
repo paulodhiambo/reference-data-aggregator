@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Deployment script for RDAS on Kubernetes
+# Deployment script for Reference Data Aggregator on Kubernetes
 
-IMAGE_NAME="loopdfs/rdas"
+IMAGE_NAME="loopdfs/reference-data-aggregator"
 TAG="1.2.0"
 NAMESPACE="default"
 
 echo "================================================================="
-echo "🚀 Deploying Reference Data Aggregation Service (RDAS) to Kubernetes"
+echo "🚀 Deploying Reference Data Aggregator to Kubernetes"
 echo "================================================================="
 
 # Detect cluster environment
@@ -31,10 +31,10 @@ kubectl apply -f k8s/pdb.yaml -n "$NAMESPACE"
 kubectl apply -f k8s/statefulset.yaml -n "$NAMESPACE"
 
 echo "⏳ Waiting for rollout to finish..."
-kubectl rollout status statefulset/rdas -n "$NAMESPACE" --timeout=120s
+kubectl rollout status statefulset/reference-data-aggregator -n "$NAMESPACE" --timeout=120s
 
-echo "🚀 RDAS successfully deployed to namespace: ${NAMESPACE}"
+echo "🚀 Reference Data Aggregator successfully deployed to namespace: ${NAMESPACE}"
 echo "-----------------------------------------------------------------"
 echo "Status of resources:"
-kubectl get all -l app=rdas -n "$NAMESPACE"
+kubectl get all -l app=reference-data-aggregator -n "$NAMESPACE"
 echo "================================================================="
