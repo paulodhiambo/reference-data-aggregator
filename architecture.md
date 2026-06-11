@@ -1,12 +1,11 @@
 # Reference Data Aggregation Service (RDAS) — Architecture Document
 
-|             |                                                |
-| ----------- | ---------------------------------------------- |
-| **Service** | Reference Data Aggregation Service (RDAS)      |
-| **Team**    | Digital Business — LOOP DFS                    |
-| **Status**  | Approved for build                             |
-| **Version** | 1.2                                            |
-| **Stack**   | Java 21, Spring Boot 3.5.x, Maven, Kubernetes (see `implementation.md` §1) |
+|             |                                                                            |
+| ----------- |----------------------------------------------------------------------------|
+| **Service** | Reference Data Aggregation Service (RDAS)                                  |
+| **Team**    | Digital Business — LOOP DFS                                                |
+| **Version** | 1.0                                                                        |
+| **Stack**   | Java 21, Spring Boot 4.0.x, Maven, Kubernetes (see `implementation.md` §1) |
 
 ---
 

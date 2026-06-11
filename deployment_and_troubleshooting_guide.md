@@ -13,7 +13,7 @@ This guide describes how to deploy, verify, and troubleshoot the **Reference Dat
 4. (Optional) Local docker registry or Minikube tunnel enabled.
 
 ### 1. Build and Prepare the Docker Image
-Reference Data Aggregator includes a multi-stage [Dockerfile](file:///Users/paul/Documents/vibing/reference-data-aggregator/Dockerfile) that packages Java 21 / Spring Boot into a minimal alpine JRE image.
+Reference Data Aggregator includes a multi-stage [Dockerfile](Dockerfile) that packages Java 21 / Spring Boot into a minimal alpine JRE image.
 
 ```bash
 docker build -t loopdfs/reference-data-aggregator:1.2.0 .
@@ -26,7 +26,7 @@ docker build -t loopdfs/reference-data-aggregator:1.2.0 .
 ```
 
 ### 2. Apply Configuration & Secrets
-Apply the Secret [k8s/secret.yaml](file:///Users/paul/Documents/vibing/reference-data-aggregator/k8s/secret.yaml) and the ConfigMap [k8s/configmap.yaml](file:///Users/paul/Documents/vibing/reference-data-aggregator/k8s/configmap.yaml):
+Apply the Secret [k8s/secret.yaml](k8s/secret.yaml) and the ConfigMap [k8s/configmap.yaml](k8s/configmap.yaml):
 
 ```bash
 kubectl apply -f k8s/secret.yaml
@@ -50,7 +50,7 @@ This will deploy:
 * **PodDisruptionBudget (reference-data-aggregator-pdb):** Restricts voluntary disruptions to ensure at least 2 replicas remain available during upgrades or maintenance.
 
 ### 4. Automated Deployment script
-Alternatively, you can run the helper script [deploy.sh](file:///Users/paul/Documents/vibing/reference-data-aggregator/deploy.sh) in the root of the project to orchestrate all the steps above automatically:
+Alternatively, you can run the helper script [deploy.sh](deploy.sh) in the root of the project to orchestrate all the steps above automatically:
 
 ```bash
 bash deploy.sh

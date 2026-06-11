@@ -8,13 +8,13 @@ RDAS is a production-grade, high-performance, and resilient Spring Boot service 
 
 To help navigate the technical solution design, operations, and discussion deliverables:
 
-* **Solution Architecture Design:** [architecture.md](file:///Users/paul/Documents/vibing/reference-data-aggregator/architecture.md) — Comprehensive technical overview of caching strategies, database-free data processing pipelines, and data flow structures.
-* **Written Engineering Discussion Responses:** [engineering_discussion.md](file:///Users/paul/Documents/vibing/reference-data-aggregator/engineering_discussion.md) — Answers to assessments questions about scaling to 20M+ requests/day, downstream Kafka notifications, S3 shared cache state, and rate-limiting throttles.
-* **Kubernetes Deployment & Troubleshooting Guide:** [deployment_and_troubleshooting_guide.md](file:///Users/paul/Documents/vibing/reference-data-aggregator/deployment_and_troubleshooting_guide.md) — Operational manual detailing cluster validation, containerization settings, resource scaling, and logs diagnosis.
-* **Automated Postman Collection Guide:** [postman/README.md](file:///Users/paul/Documents/vibing/reference-data-aggregator/postman/README.md) — Guidelines to set up and execute automated endpoint tests using Newman/Postman.
-* **Orchestration Deployment Script:** [deploy.sh](file:///Users/paul/Documents/vibing/reference-data-aggregator/deploy.sh) — Automates docker image builds and applies all Kubernetes manifests.
-* **Docker Build Script:** [Dockerfile](file:///Users/paul/Documents/vibing/reference-data-aggregator/Dockerfile) — Hardened multi-stage JVM execution environment running as non-root user.
-* **CI/CD Workflow:** [.github/workflows/ci-cd.yml](file:///Users/paul/Documents/vibing/reference-data-aggregator/.github/workflows/ci-cd.yml) — GitHub Actions pipeline automation for code testing, Docker packaging dry-runs, and Kubernetes resource validation.
+* **Solution Architecture Design:** [architecture.md](architecture.md) — Comprehensive technical overview of caching strategies, database-free data processing pipelines, and data flow structures.
+* **Written Engineering Discussion Responses:** [engineering_discussion.md](engineering_discussion.md) — Answers to assessments questions about scaling to 20M+ requests/day, downstream Kafka notifications, S3 shared cache state, and rate-limiting throttles.
+* **Kubernetes Deployment & Troubleshooting Guide:** [deployment_and_troubleshooting_guide.md](deployment_and_troubleshooting_guide.md) — Operational manual detailing cluster validation, containerization settings, resource scaling, and logs diagnosis.
+* **Automated Postman Collection Guide:** [postman/README.md](postman/README.md) — Guidelines to set up and execute automated endpoint tests using Newman/Postman.
+* **Orchestration Deployment Script:** [deploy.sh](deploy.sh) — Automates docker image builds and applies all Kubernetes manifests.
+* **Docker Build Script:** [Dockerfile](Dockerfile) — Hardened multi-stage JVM execution environment running as non-root user.
+* **CI/CD Workflow:** [.github/workflows/ci-cd.yml](.github/workflows/ci-cd.yml) — GitHub Actions pipeline automation for code testing, Docker packaging dry-runs, and Kubernetes resource validation.
 
 ---
 
@@ -34,7 +34,7 @@ graph TD
 
 To achieve high availability and strict performance SLAs, RDAS implements the following architectural invariants:
 1. **Zero SOAP I/O on Request Paths:** All client requests are resolved completely in-memory using atomic references, eliminating network hops to the SOAP service during queries.
-2. **Startup Resiliency:** During startup, if the SOAP service is unreachable, the system automatically falls back to bootstrap from a pre-packaged classpath baseline JSON dataset ([baseline-countries.json](file:///Users/paul/Documents/vibing/reference-data-aggregator/src/main/resources/baseline-countries.json)).
+2. **Startup Resiliency:** During startup, if the SOAP service is unreachable, the system automatically falls back to bootstrap from a pre-packaged classpath baseline JSON dataset ([baseline-countries.json](src/main/resources/baseline-countries.json)).
 3. **XXE Security Hardening:** The internal SOAP parser is explicitly configured to disable doctype declarations (`disallow-doctype-decl`), shielding the system against XML External Entity attacks.
 4. **Optimized Bandwidth with ETags:** Weak ETags (`W/"<hash>-fresh"` or `W/"<hash>-stale"`) are generated from the snapshot data hash. The service fully supports HTTP `304 Not Modified` conditional validation.
 5. **Delta Audit Logging:** Every snapshot refresh evaluates the data SHA-256 hash. If changes are detected, a structured `AUDIT` log is emitted showing added, deleted, or updated countries.
@@ -124,18 +124,18 @@ mvn test
 ```
 
 ### Postman Collections
-An automated Postman collection is provided under the [postman/](file:///Users/paul/Documents/vibing/reference-data-aggregator/postman/) directory to verify and validate REST resources, test schema envelopes, run performance tests, and test ETag conditional validation automatically.
+An automated Postman collection is provided under the [postman/](postman/) directory to verify and validate REST resources, test schema envelopes, run performance tests, and test ETag conditional validation automatically.
 
-Refer to the [Postman Documentation README](file:///Users/paul/Documents/vibing/reference-data-aggregator/postman/README.md) for importing details and running tests with Newman.
+Refer to the [Postman Documentation README](postman/README.md) for importing details and running tests with Newman.
 
 ---
 
 ## ☸️ Kubernetes Deployment
 
-Deployment manifests are located in the [k8s/](file:///Users/paul/Documents/vibing/reference-data-aggregator/k8s/) directory:
+Deployment manifests are located in the [k8s/](k8s/) directory:
 
-* [statefulset.yaml](file:///Users/paul/Documents/vibing/reference-data-aggregator/k8s/statefulset.yaml): Deploys a 3-replica `StatefulSet` with individual persistent storage allocations for disk backups, service bindings, Horizontal Pod Autoscaling (HPA), and Pod Disruption Budgets (PDB).
-* [configmap.yaml](file:///Users/paul/Documents/vibing/reference-data-aggregator/k8s/configmap.yaml): Houses default env configurations mapping onto Spring properties.
+* [statefulset.yaml](k8s/statefulset.yaml): Deploys a 3-replica `StatefulSet` with individual persistent storage allocations for disk backups, service bindings, Horizontal Pod Autoscaling (HPA), and Pod Disruption Budgets (PDB).
+* [configmap.yaml](k8s/configmap.yaml): Houses default env configurations mapping onto Spring properties.
 
 ### Deployment & Troubleshooting Guides
 For detailed steps on building the container image, deploying, and troubleshooting the live cluster environment:
