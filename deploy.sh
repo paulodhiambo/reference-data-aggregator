@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Deployment script for Reference Data Aggregator on Kubernetes
-
 IMAGE_NAME="loopdfs/reference-data-aggregator"
 TAG="1.2.0"
 NAMESPACE="default"
