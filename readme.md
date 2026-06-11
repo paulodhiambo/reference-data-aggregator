@@ -1,5 +1,7 @@
 # Reference Data Aggregation Service (RDAS)
 
+[![Build & Verify Reference Data Aggregator](https://github.com/paulodhiambo/reference-data-aggregator/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/paulodhiambo/reference-data-aggregator/actions)
+
 RDAS is a production-grade, high-performance, and resilient Spring Boot service designed to act as the single source of truth for country, currency, language, and geographical reference data at LOOP DFS. It aggregates and enriches static reference data from an upstream SOAP service, exposing a clean, fully-indexed REST/JSON API for downstream clients (Mobile, Web, and Portals).
 
 ---
