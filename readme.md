@@ -4,6 +4,20 @@ RDAS is a production-grade, high-performance, and resilient Spring Boot service 
 
 ---
 
+## 📂 Project Documents Index
+
+To help navigate the technical solution design, operations, and discussion deliverables:
+
+* **Solution Architecture Design:** [architecture.md](file:///Users/paul/Documents/vibing/reference-data-aggregator/architecture.md) — Comprehensive technical overview of caching strategies, database-free data processing pipelines, and data flow structures.
+* **Written Engineering Discussion Responses:** [engineering_discussion.md](file:///Users/paul/Documents/vibing/reference-data-aggregator/engineering_discussion.md) — Answers to assessments questions about scaling to 20M+ requests/day, downstream Kafka notifications, S3 shared cache state, and rate-limiting throttles.
+* **Kubernetes Deployment & Troubleshooting Guide:** [deployment_and_troubleshooting_guide.md](file:///Users/paul/Documents/vibing/reference-data-aggregator/deployment_and_troubleshooting_guide.md) — Operational manual detailing cluster validation, containerization settings, resource scaling, and logs diagnosis.
+* **Automated Postman Collection Guide:** [postman/README.md](file:///Users/paul/Documents/vibing/reference-data-aggregator/postman/README.md) — Guidelines to set up and execute automated endpoint tests using Newman/Postman.
+* **Orchestration Deployment Script:** [deploy.sh](file:///Users/paul/Documents/vibing/reference-data-aggregator/deploy.sh) — Automates docker image builds and applies all Kubernetes manifests.
+* **Docker Build Script:** [Dockerfile](file:///Users/paul/Documents/vibing/reference-data-aggregator/Dockerfile) — Hardened multi-stage JVM execution environment running as non-root user.
+
+---
+
+
 ## 🏗️ Architecture & Core Invariants
 
 ```mermaid
