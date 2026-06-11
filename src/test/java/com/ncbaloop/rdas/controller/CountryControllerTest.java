@@ -28,7 +28,6 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 class CountryControllerTest {
-
     private MockMvc mockMvc;
     private CountryQueryService queryService;
     private Snapshot mockSnapshot;
@@ -36,7 +35,7 @@ class CountryControllerTest {
     @BeforeEach
     void setUp() {
         queryService = Mockito.mock(CountryQueryService.class);
-        
+
         mockSnapshot = new Snapshot(
                 List.of(), Map.of(), Map.of(), List.of(), List.of(), List.of(),
                 Instant.parse("2026-06-11T12:00:00Z"),
@@ -98,7 +97,7 @@ class CountryControllerTest {
         Method method = CountryController.class.getMethod("getCountry", String.class, String.class);
         Parameter parameter = method.getParameters()[0]; // isoCode
         Pattern pattern = parameter.getAnnotation(Pattern.class);
-        
+
         assertNotNull(pattern, "isoCode must have @Pattern annotation");
         assertEquals("^[A-Za-z]{2}$", pattern.regexp());
         assertEquals("isoCode must be exactly 2 letters", pattern.message());
@@ -106,22 +105,22 @@ class CountryControllerTest {
 
     @Test
     void listCountries_SortBy_ValidationAnnotation() throws Exception {
-        Method method = CountryController.class.getMethod("listCountries", 
+        Method method = CountryController.class.getMethod("listCountries",
                 String.class, String.class, String.class, String.class, String.class, String.class, int.class, int.class, String.class);
         Parameter parameter = method.getParameters()[4]; // sortBy
         Pattern pattern = parameter.getAnnotation(Pattern.class);
-        
+
         assertNotNull(pattern, "sortBy must have @Pattern annotation");
         assertEquals("name|isoCode|capital|phoneCode|continentCode|currencyCode", pattern.regexp());
     }
 
     @Test
     void listCountries_SortDir_ValidationAnnotation() throws Exception {
-        Method method = CountryController.class.getMethod("listCountries", 
+        Method method = CountryController.class.getMethod("listCountries",
                 String.class, String.class, String.class, String.class, String.class, String.class, int.class, int.class, String.class);
         Parameter parameter = method.getParameters()[5]; // sortDir
         Pattern pattern = parameter.getAnnotation(Pattern.class);
-        
+
         assertNotNull(pattern, "sortDir must have @Pattern annotation");
         assertEquals("asc|desc", pattern.regexp());
     }
@@ -131,7 +130,7 @@ class CountryControllerTest {
         Method method = CountryController.class.getMethod("countriesByCurrency", String.class);
         Parameter parameter = method.getParameters()[0]; // code
         Pattern pattern = parameter.getAnnotation(Pattern.class);
-        
+
         assertNotNull(pattern, "currency code must have @Pattern annotation");
         assertEquals("^[A-Za-z]{3}$", pattern.regexp());
     }

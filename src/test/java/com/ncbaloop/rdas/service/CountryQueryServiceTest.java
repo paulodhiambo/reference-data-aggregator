@@ -18,7 +18,6 @@ import java.util.concurrent.atomic.AtomicReference;
 import static org.junit.jupiter.api.Assertions.*;
 
 class CountryQueryServiceTest {
-
     private CountryQueryService queryService;
     private AtomicReference<Snapshot> store;
 
