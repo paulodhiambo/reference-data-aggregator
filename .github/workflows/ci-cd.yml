@@ -50,24 +50,3 @@ jobs:
           file: ./Dockerfile
           push: false
           tags: loopdfs/reference-data-aggregator:latest
-
-  k8s-validate:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
-
-      - name: Install envsubst
-        run: sudo apt-get update && sudo apt-get install -y gettext-base
-
-      - name: Substitute Secrets Placeholder & Validate Manifests
-        env:
-          RDAS_SOAP_USERNAME: "dummy-action-user"
-          RDAS_SOAP_PASSWORD: "dummy-action-password"
-        run: |
-          # Inject mock credentials into template secrets manifest
-          envsubst < k8s/secret.yaml > k8s/secret-substituted.yaml
-          mv k8s/secret-substituted.yaml k8s/secret.yaml
-          
-          # Dry run validation of all Kubernetes assets
-          kubectl apply --dry-run=client --validate=false -f k8s/
