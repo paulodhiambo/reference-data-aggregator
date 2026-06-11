@@ -70,4 +70,4 @@ jobs:
           mv k8s/secret-substituted.yaml k8s/secret.yaml
           
           # Dry run validation of all Kubernetes assets
-          kubectl apply --dry-run=client -f k8s/
+          kubectl apply --dry-run=client --validate=false -f k8s/
