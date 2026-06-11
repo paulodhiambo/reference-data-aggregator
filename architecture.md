@@ -5,7 +5,7 @@
 | **Service** | Reference Data Aggregation Service (RDAS)                                  |
 | **Team**    | Digital Business — LOOP DFS                                                |
 | **Version** | 1.0                                                                        |
-| **Stack**   | Java 21, Spring Boot 4.0.x, Maven, Kubernetes (see `implementation.md` §1) |
+| **Stack**   | Java 21, Spring Boot 4.0.x, Maven, Kubernetes (see [readme.md](readme.md)) |
 
 ---
 
@@ -196,19 +196,25 @@ Query parameters on `GET /api/v1/countries`: `name` (case-insensitive *contains*
 GET /api/v1/countries?continent=Africa&currency=KES&page=0&size=20&sortBy=name
 
 {
-  "content": [
-    {
-      "isoCode": "KE",
-      "name": "Kenya",
-      "capital": "Nairobi",
-      "phoneCode": "254",
-      "continent": { "code": "AF", "name": "Africa" },
-      "currency": { "code": "KES", "name": "Kenya Shilling" },
-      "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Kenya.jpg",
-      "languages": [ { "code": "EN", "name": "English" }, { "code": "SW", "name": "Swahili" } ]
-    }
-  ],
-  "page": { "number": 0, "size": 20, "totalElements": 1, "totalPages": 1 },
+  "data": {
+    "content": [
+      {
+        "isoCode": "KE",
+        "name": "Kenya",
+        "capital": "Nairobi",
+        "phoneCode": "254",
+        "continent": { "code": "AF", "name": "Africa" },
+        "currency": { "code": "KES", "name": "Kenya Shilling" },
+        "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Kenya.jpg",
+        "languages": [ { "code": "EN", "name": "English" }, { "code": "SW", "name": "Swahili" } ]
+      }
+    ],
+    "pageNumber": 0,
+    "pageSize": 20,
+    "totalElements": 1,
+    "totalPages": 1,
+    "last": true
+  },
   "dataAsOf": "2026-06-11T06:00:04Z",
   "stale": false
 }
@@ -221,12 +227,12 @@ HTTP/1.1 400 Bad Request
 Content-Type: application/problem+json
 
 {
-  "type": "https://rdas.loop-dfs.internal/problems/invalid-parameter",
-  "title": "Invalid request parameter",
+  "type": "about:blank",
+  "title": "Invalid Request Parameter",
   "status": 400,
   "detail": "size must be between 1 and 100",
   "instance": "/api/v1/countries",
-  "correlationId": "0af7651916cd43dd8448eb211c80319c"
+  "timestamp": "2026-06-11T14:22:13.123456Z"
 }
 ```
 
@@ -361,7 +367,7 @@ Nothing different. Consumer requests read the in-memory snapshot and never touch
 | Refresh failure             | `rdas.snapshot.refresh{outcome=failure}` counter                             | Warn on 1, page on 3 consecutive         |
 | Circuit breaker OPEN        | Resilience4j metrics → Actuator/Prometheus                                   | Page — provider outage confirmed         |
 | Snapshot age                | gauge derived from `loadedAt`                                                | Warn > 24 h, critical > 48 h             |
-| Snapshot source ≠ LIVE      | gauge/tag from the snapshot source marker                                    | Warn — pod running on disk/baseline data |
+| Snapshot source ≠ LIVE      | health detail `referenceData.details.source` from `/actuator/health`         | Warn — pod running on disk/baseline data |
 | Liveness probe              | `/actuator/health/liveness` (independent of SOAP connectivity / cache)       | Container status (avoids restart loops)  |
 | Readiness probe             | `/actuator/health/readiness` (includes snapshot-loaded indicator)            | K8s traffic routing control              |
 | Consumer 5xx rate & latency | HTTP server metrics                                                          | Standard SLO burn alerts                 |
