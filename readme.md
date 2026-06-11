@@ -14,6 +14,7 @@ To help navigate the technical solution design, operations, and discussion deliv
 * **Automated Postman Collection Guide:** [postman/README.md](file:///Users/paul/Documents/vibing/reference-data-aggregator/postman/README.md) — Guidelines to set up and execute automated endpoint tests using Newman/Postman.
 * **Orchestration Deployment Script:** [deploy.sh](file:///Users/paul/Documents/vibing/reference-data-aggregator/deploy.sh) — Automates docker image builds and applies all Kubernetes manifests.
 * **Docker Build Script:** [Dockerfile](file:///Users/paul/Documents/vibing/reference-data-aggregator/Dockerfile) — Hardened multi-stage JVM execution environment running as non-root user.
+* **CI/CD Workflow:** [.github/workflows/ci-cd.yml](file:///Users/paul/Documents/vibing/reference-data-aggregator/.github/workflows/ci-cd.yml) — GitHub Actions pipeline automation for code testing, Docker packaging dry-runs, and Kubernetes resource validation.
 
 ---
 

@@ -1,0 +1,73 @@
+name: Build & Verify Reference Data Aggregator
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+          cache: 'maven'
+
+      - name: Build with Maven & Run Tests
+        run: mvn clean test -B
+
+      - name: Upload Test Reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: surefire-reports
+          path: target/surefire-reports/
+          retention-days: 5
+
+  docker-dry-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: actions/setup-qemu-action@v3
+
+      - name: Set up Docker Build
+        uses: actions/setup-buildx-action@v3
+
+      - name: Build Docker Image (Dry Run)
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          file: ./Dockerfile
+          push: false
+          tags: loopdfs/reference-data-aggregator:latest
+
+  k8s-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Install envsubst
+        run: sudo apt-get update && sudo apt-get install -y gettext-base
+
+      - name: Substitute Secrets Placeholder & Validate Manifests
+        env:
+          RDAS_SOAP_USERNAME: "dummy-action-user"
+          RDAS_SOAP_PASSWORD: "dummy-action-password"
+        run: |
+          # Inject mock credentials into template secrets manifest
+          envsubst < k8s/secret.yaml > k8s/secret-substituted.yaml
+          mv k8s/secret-substituted.yaml k8s/secret.yaml
+          
+          # Dry run validation of all Kubernetes assets
+          kubectl apply --dry-run=client -f k8s/
