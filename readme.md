@@ -29,7 +29,7 @@ To achieve high availability and strict performance SLAs, RDAS implements the fo
 
 ## 🛠️ Tech Stack & Dependencies
 
-* **Core:** Java 21 / Spring Boot 3.5.x
+* **Core:** Java 21 / Spring Boot 4.0.x
 * **Cache Engine:** Concurrent In-Memory Indexes + Caffeine L2 Cache (for filtering & paging index structures)
 * **Resiliency:** Resilience4j (Circuit Breaker, Rate Limiter, Retry on SOAP calls)
 * **Observability:** Spring Boot Actuator + Micrometer + Prometheus scraping
