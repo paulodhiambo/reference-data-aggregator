@@ -1,0 +1,124 @@
+---
+# k8s/statefulset.yaml
+# StatefulSet (not Deployment) so each pod gets its own PVC for the local snapshot restore (architecture §6.3).
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: rdas
+  labels:
+    app: rdas
+spec:
+  serviceName: rdas
+  replicas: 3
+  selector:
+    matchLabels:
+      app: rdas
+  template:
+    metadata:
+      labels:
+        app: rdas
+    spec:
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 1000
+        fsGroup: 1000
+      containers:
+        - name: rdas
+          image: loopdfs/rdas:1.2.0
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
+              name: http
+          envFrom:
+            - configMapRef:
+                name: rdas-config
+          env:
+            - name: SPRING_APPLICATION_NAME
+              value: rdas
+          resources:
+            requests:
+              cpu: "250m"
+              memory: "256Mi"
+            limits:
+              cpu: "1000m"
+              memory: "512Mi"
+          volumeMounts:
+            - name: snapshot-storage
+              mountPath: /data/snapshot
+          # ── Liveness: only checks JVM is alive, not SOAP or cache ──────────
+          livenessProbe:
+            httpGet:
+              path: /actuator/health/liveness
+              port: 8080
+            initialDelaySeconds: 30
+            periodSeconds: 15
+            failureThreshold: 4
+          # ── Readiness: checks referenceData indicator (snapshot loaded) ────
+          readinessProbe:
+            httpGet:
+              path: /actuator/health/readiness
+              port: 8080
+            initialDelaySeconds: 15
+            periodSeconds: 10
+            failureThreshold: 6
+  volumeClaimTemplates:
+    - metadata:
+        name: snapshot-storage
+      spec:
+        accessModes: ["ReadWriteOnce"]
+        resources:
+          requests:
+            storage: 50Mi
+---
+# k8s/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: rdas
+  labels:
+    app: rdas
+spec:
+  selector:
+    app: rdas
+  ports:
+    - port: 80
+      targetPort: 8080
+      name: http
+  type: ClusterIP
+---
+# k8s/hpa.yaml
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: rdas-hpa
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: StatefulSet
+    name: rdas
+  minReplicas: 3
+  maxReplicas: 10
+  metrics:
+    - type: Resource
+      resource:
+        name: cpu
+        target:
+          type: Utilization
+          averageUtilization: 70
+    - type: Resource
+      resource:
+        name: memory
+        target:
+          type: Utilization
+          averageUtilization: 80
+---
+# k8s/pdb.yaml — Ensures at least 2 pods remain during rolling updates/outages
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: rdas-pdb
+spec:
+  minAvailable: 2
+  selector:
+    matchLabels:
+      app: rdas

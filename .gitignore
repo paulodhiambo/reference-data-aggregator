@@ -1,0 +1,7 @@
+target/
+.idea/
+*.class
+*.jar
+*.log
+.DS_Store
+postman/generate_collection.py

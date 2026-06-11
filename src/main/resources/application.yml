@@ -1,0 +1,72 @@
+spring:
+  application:
+    name: reference-data-aggregator
+
+server:
+  port: 8080
+  error:
+    include-message: never
+
+# ── SOAP upstream ──────────────────────────────────────────────────────────────
+rdas:
+  soap:
+    endpoint: "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso"
+    connect-timeout-ms: 5000
+    read-timeout-ms: 15000
+  cache:
+    refresh-cron: "0 0 */12 * * *"   # every 12 h
+    retry-cron: "0 0 * * * *"        # every 1 h (active only after a failed refresh)
+    stale-threshold-hours: 48
+    snapshot-path: "/tmp/rdas_snapshot.json"
+  query-cache:
+    max-size: 5000
+    ttl-minutes: 10
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus,metrics
+  endpoint:
+    health:
+      probes:
+        enabled: true
+      show-details: always
+      group:
+        readiness:
+          include: referenceData
+        liveness:
+          include: ping
+  tracing:
+    sampling:
+      probability: 1.0
+
+resilience4j:
+  ratelimiter:
+    instances:
+      soap-client:
+        limit-for-period: 90
+        limit-refresh-period: 1m
+        timeout-duration: 5s
+  retry:
+    instances:
+      soap-client:
+        max-attempts: 3
+        wait-duration: 2s
+        enable-exponential-backoff: true
+        exponential-backoff-multiplier: 2
+  circuitbreaker:
+    instances:
+      soap-client:
+        sliding-window-type: COUNT_BASED
+        sliding-window-size: 10
+        failure-rate-threshold: 50
+        wait-duration-in-open-state: 60s
+        permitted-number-of-calls-in-half-open-state: 3
+        automatic-transition-from-open-to-half-open-enabled: true
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-docs:
+    path: /api-docs

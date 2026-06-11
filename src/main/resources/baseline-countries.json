@@ -1,0 +1,5067 @@
+[
+  {
+    "isoCode": "AD",
+    "name": "Andorra",
+    "capital": "Andorra La Ville",
+    "phoneCode": "371",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "EUR",
+      "name": "Euro"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Andorra.jpg",
+    "languages": [
+      {
+        "code": "cat",
+        "name": "Catalan"
+      },
+      {
+        "code": "es",
+        "name": "Spanish"
+      },
+      {
+        "code": "fr",
+        "name": "French"
+      },
+      {
+        "code": "glg",
+        "name": "Gallegan"
+      },
+      {
+        "code": "por",
+        "name": "Portuguese"
+      }
+    ]
+  },
+  {
+    "isoCode": "AE",
+    "name": "United Arab Emirates",
+    "capital": "Abu Dhabi",
+    "phoneCode": "971",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "AED",
+      "name": "Dirhams"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/United_Arab_Emirates.jpg",
+    "languages": [
+      {
+        "code": "ara",
+        "name": "Arabic"
+      }
+    ]
+  },
+  {
+    "isoCode": "AF",
+    "name": "Afghanistan",
+    "capital": "Kabul",
+    "phoneCode": "93",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "AFA",
+      "name": "Afghanis"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Afghanistan.jpg",
+    "languages": [
+      {
+        "code": "pus",
+        "name": "Pushto"
+      }
+    ]
+  },
+  {
+    "isoCode": "AG",
+    "name": "Antigua & Barbuda",
+    "capital": "St. John's",
+    "phoneCode": "1",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "XCD",
+      "name": "East Caribbean Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Antigua.jpg",
+    "languages": [
+      {
+        "code": "eng",
+        "name": "English"
+      }
+    ]
+  },
+  {
+    "isoCode": "AI",
+    "name": "Anguilla",
+    "capital": "The Valley",
+    "phoneCode": "264",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "CAD",
+      "name": "Canadian Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Anguilla.jpg",
+    "languages": []
+  },
+  {
+    "isoCode": "AL",
+    "name": "Albania",
+    "capital": "Tirana",
+    "phoneCode": "355",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "ALL",
+      "name": "Leke"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Albania.jpg",
+    "languages": [
+      {
+        "code": "sq",
+        "name": "Albanian"
+      }
+    ]
+  },
+  {
+    "isoCode": "AM",
+    "name": "Armenia",
+    "capital": "Yerevan",
+    "phoneCode": "374",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "AMD",
+      "name": "Drams"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Armenia.jpg",
+    "languages": [
+      {
+        "code": "hy",
+        "name": "Armenian"
+      }
+    ]
+  },
+  {
+    "isoCode": "AN",
+    "name": "Netherlands Antilles",
+    "capital": "Willemstad",
+    "phoneCode": "599",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "ANG",
+      "name": "Netherlands Antilles Guilders (also called Florins)"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Netherlands_Antilles.jpg",
+    "languages": []
+  },
+  {
+    "isoCode": "AO",
+    "name": "Angola",
+    "capital": "Luanda",
+    "phoneCode": "244",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "AOA",
+      "name": "Kwanza"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Angola.jpg",
+    "languages": [
+      {
+        "code": "bnt",
+        "name": "Bantu (Other)"
+      }
+    ]
+  },
+  {
+    "isoCode": "AQ",
+    "name": "Antarctica",
+    "capital": "None",
+    "phoneCode": "0",
+    "continent": {
+      "code": "AN",
+      "name": "Antarctica"
+    },
+    "currency": {
+      "code": null,
+      "name": "No Universal Currency"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Antartica.jpg",
+    "languages": []
+  },
+  {
+    "isoCode": "AR",
+    "name": "Argentina",
+    "capital": "Buenos Aires",
+    "phoneCode": "54",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "ARS",
+      "name": "Pesos"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Argentina.jpg",
+    "languages": [
+      {
+        "code": "es",
+        "name": "Spanish"
+      }
+    ]
+  },
+  {
+    "isoCode": "AS",
+    "name": "American Samoa",
+    "capital": "Pago Pago",
+    "phoneCode": "684",
+    "continent": {
+      "code": "OC",
+      "name": "Ocenania"
+    },
+    "currency": {
+      "code": "USD",
+      "name": "Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/American_Samoa.jpg",
+    "languages": [
+      {
+        "code": "eng",
+        "name": "English"
+      }
+    ]
+  },
+  {
+    "isoCode": "AT",
+    "name": "Austria",
+    "capital": "Vienna",
+    "phoneCode": "43",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "EUR",
+      "name": "Euro"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Austria.jpg",
+    "languages": [
+      {
+        "code": "de",
+        "name": "German"
+      }
+    ]
+  },
+  {
+    "isoCode": "AU",
+    "name": "Australia",
+    "capital": "Canberra",
+    "phoneCode": "61",
+    "continent": {
+      "code": "OC",
+      "name": "Ocenania"
+    },
+    "currency": {
+      "code": "AUD",
+      "name": "Australian Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Australia.jpg",
+    "languages": [
+      {
+        "code": "eng",
+        "name": "English"
+      }
+    ]
+  },
+  {
+    "isoCode": "AW",
+    "name": "Aruba",
+    "capital": "Oranjestad",
+    "phoneCode": "297",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "AWG",
+      "name": "Aruba Guilders (also called Florins)"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Aruba.jpg",
+    "languages": []
+  },
+  {
+    "isoCode": "AX",
+    "name": "\u00c5land Islands",
+    "capital": "Mariehamn",
+    "phoneCode": "358",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "EUR",
+      "name": "Euro"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/\u00c5land_Islands.jpg",
+    "languages": [
+      {
+        "code": "sv",
+        "name": "Swedish"
+      }
+    ]
+  },
+  {
+    "isoCode": "AZ",
+    "name": "Azerbaijan",
+    "capital": "Baku",
+    "phoneCode": "994",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "AZM",
+      "name": "Manats"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Azerbaijan.jpg",
+    "languages": [
+      {
+        "code": "aze",
+        "name": "Azerbaijani"
+      }
+    ]
+  },
+  {
+    "isoCode": "BA",
+    "name": "Bosnia & Herzegovina",
+    "capital": "Sarajevo",
+    "phoneCode": "387",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "BAM",
+      "name": "Convertible Marka"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Bosnia_Herzegovina.jpg",
+    "languages": [
+      {
+        "code": "scr",
+        "name": "Serbo-Croatian"
+      }
+    ]
+  },
+  {
+    "isoCode": "BB",
+    "name": "Barbados",
+    "capital": "Bridgetown",
+    "phoneCode": "1",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "BBD",
+      "name": "Barbados Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Barbados.jpg",
+    "languages": [
+      {
+        "code": "eng",
+        "name": "English"
+      }
+    ]
+  },
+  {
+    "isoCode": "BD",
+    "name": "Bangladesh",
+    "capital": "Dhaka",
+    "phoneCode": "880",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "BDT",
+      "name": "Taka"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Bangladesh.jpg",
+    "languages": [
+      {
+        "code": "ben",
+        "name": "Bengali"
+      }
+    ]
+  },
+  {
+    "isoCode": "BE",
+    "name": "Belgium",
+    "capital": "Brussels",
+    "phoneCode": "32",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "EUR",
+      "name": "Euro"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Belgium.jpg",
+    "languages": [
+      {
+        "code": "nl",
+        "name": "Dutch"
+      }
+    ]
+  },
+  {
+    "isoCode": "BF",
+    "name": "Burkina Faso",
+    "capital": "Ouagadougou",
+    "phoneCode": "226",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "XOF",
+      "name": "Communaut\u00e9 Financi\u00e8re Africaine Francs"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Burkina.jpg",
+    "languages": [
+      {
+        "code": "fr",
+        "name": "French"
+      }
+    ]
+  },
+  {
+    "isoCode": "BG",
+    "name": "Bulgaria",
+    "capital": "Sofia",
+    "phoneCode": "359",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "BGN",
+      "name": "Leva"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Bulgaria.jpg",
+    "languages": [
+      {
+        "code": "bul",
+        "name": "Bulgarian"
+      }
+    ]
+  },
+  {
+    "isoCode": "BH",
+    "name": "Bahrain",
+    "capital": "Manama",
+    "phoneCode": "973",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "BHD",
+      "name": "Bahrain Dinars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Bahrain.jpg",
+    "languages": [
+      {
+        "code": "ara",
+        "name": "Arabic"
+      }
+    ]
+  },
+  {
+    "isoCode": "BI",
+    "name": "Burundi",
+    "capital": "Bujumbura",
+    "phoneCode": "257",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "BIF",
+      "name": "Francs"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Burundi.jpg",
+    "languages": [
+      {
+        "code": "rn",
+        "name": "Kirundi"
+      }
+    ]
+  },
+  {
+    "isoCode": "BJ",
+    "name": "Benin",
+    "capital": "Porto-Novo",
+    "phoneCode": "229",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "XOF",
+      "name": "Communaut\u00e9 Financi\u00e8re Africaine Francs"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Benin.jpg",
+    "languages": [
+      {
+        "code": "fr",
+        "name": "French"
+      }
+    ]
+  },
+  {
+    "isoCode": "BL",
+    "name": "Saint Barth\u00e9lemy",
+    "capital": "Gustavia",
+    "phoneCode": "590",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "EUR",
+      "name": "Euro"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Saint_Barthelemy.png",
+    "languages": [
+      {
+        "code": "fr",
+        "name": "French"
+      }
+    ]
+  },
+  {
+    "isoCode": "BM",
+    "name": "Bermuda",
+    "capital": "Hamilton",
+    "phoneCode": "441",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "BMD",
+      "name": "Bermuda Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Bermuda.jpg",
+    "languages": []
+  },
+  {
+    "isoCode": "BN",
+    "name": "Brunei-Darussalam",
+    "capital": "Bandar Seri Begawan",
+    "phoneCode": "673",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "BND",
+      "name": "Brunei Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Brunei-Darussalam.jpg",
+    "languages": [
+      {
+        "code": "ms",
+        "name": "Malay"
+      }
+    ]
+  },
+  {
+    "isoCode": "BO",
+    "name": "Bolivia",
+    "capital": "La Paz",
+    "phoneCode": "591",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "BOB",
+      "name": "Bolivianos"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Bolivia.jpg",
+    "languages": [
+      {
+        "code": "es",
+        "name": "Spanish"
+      }
+    ]
+  },
+  {
+    "isoCode": "BQ",
+    "name": "Bonaire, Sint Eustatius and Saba",
+    "capital": "-",
+    "phoneCode": "599",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "USD",
+      "name": "Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Netherlands.jpg",
+    "languages": [
+      {
+        "code": "nl",
+        "name": "Dutch"
+      }
+    ]
+  },
+  {
+    "isoCode": "BR",
+    "name": "Brazil",
+    "capital": "Brasilia",
+    "phoneCode": "55",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "BRL",
+      "name": "Brazil Real"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Brazil.jpg",
+    "languages": [
+      {
+        "code": "por",
+        "name": "Portuguese"
+      }
+    ]
+  },
+  {
+    "isoCode": "BS",
+    "name": "Bahamas",
+    "capital": "Nassau",
+    "phoneCode": "1",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "BSD",
+      "name": "Bahamas Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Bahamas.jpg",
+    "languages": [
+      {
+        "code": "eng",
+        "name": "English"
+      }
+    ]
+  },
+  {
+    "isoCode": "BT",
+    "name": "Bhutan",
+    "capital": "Timphu",
+    "phoneCode": "975",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "BTN",
+      "name": "Ngultrum"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Bhutan.jpg",
+    "languages": [
+      {
+        "code": "dzo",
+        "name": "Dzongkha"
+      }
+    ]
+  },
+  {
+    "isoCode": "BV",
+    "name": "Bouvet Island",
+    "capital": "None",
+    "phoneCode": "578",
+    "continent": {
+      "code": "AN",
+      "name": "Antarctica"
+    },
+    "currency": {
+      "code": "NOK",
+      "name": "Krone"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Norway.jpg",
+    "languages": []
+  },
+  {
+    "isoCode": "BW",
+    "name": "Botswana",
+    "capital": "Gaborone",
+    "phoneCode": "267",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "BWP",
+      "name": "Pulas"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Botswana.jpg",
+    "languages": [
+      {
+        "code": "eng",
+        "name": "English"
+      }
+    ]
+  },
+  {
+    "isoCode": "BY",
+    "name": "Belarus",
+    "capital": "Minsk",
+    "phoneCode": "375",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "BYR",
+      "name": "Rubles"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Belarus.jpg",
+    "languages": [
+      {
+        "code": "bel",
+        "name": "Byelorussian"
+      }
+    ]
+  },
+  {
+    "isoCode": "BZ",
+    "name": "Belize",
+    "capital": "Belmopan",
+    "phoneCode": "501",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "BZD",
+      "name": "Belize Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Belize.jpg",
+    "languages": [
+      {
+        "code": "eng",
+        "name": "English"
+      }
+    ]
+  },
+  {
+    "isoCode": "CA",
+    "name": "Canada",
+    "capital": "Ottawa",
+    "phoneCode": "1",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "CAD",
+      "name": "Canadian Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Canada.jpg",
+    "languages": [
+      {
+        "code": "eng",
+        "name": "English"
+      }
+    ]
+  },
+  {
+    "isoCode": "CC",
+    "name": "Cocos (Keeling) Islands",
+    "capital": "West Island",
+    "phoneCode": "287",
+    "continent": {
+      "code": "OC",
+      "name": "Ocenania"
+    },
+    "currency": {
+      "code": "AUD",
+      "name": "Australian Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Cocos_Keeling_Islands.jpg",
+    "languages": []
+  },
+  {
+    "isoCode": "CD",
+    "name": "Congo, Democratic Republic",
+    "capital": "Kinshasha",
+    "phoneCode": "243",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "XAF",
+      "name": "Communaut\u00e9 Financi\u00e8re Africaine Francs"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Congo.jpg",
+    "languages": [
+      {
+        "code": "fr",
+        "name": "French"
+      }
+    ]
+  },
+  {
+    "isoCode": "CF",
+    "name": "Central African Republic",
+    "capital": "Bangui",
+    "phoneCode": "236",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "XAF",
+      "name": "Communaut\u00e9 Financi\u00e8re Africaine Francs"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Central.jpg",
+    "languages": [
+      {
+        "code": "fr",
+        "name": "French"
+      }
+    ]
+  },
+  {
+    "isoCode": "CG",
+    "name": "Congo",
+    "capital": "Brazzerville",
+    "phoneCode": "242",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "CDF",
+      "name": "Congolese Francs"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Congo.jpg",
+    "languages": [
+      {
+        "code": "fr",
+        "name": "French"
+      }
+    ]
+  },
+  {
+    "isoCode": "CH",
+    "name": "Switzerland",
+    "capital": "Bern",
+    "phoneCode": "41",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "CHF",
+      "name": "Swiss Francs"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Switzerl.jpg",
+    "languages": [
+      {
+        "code": "de",
+        "name": "German"
+      }
+    ]
+  },
+  {
+    "isoCode": "CI",
+    "name": "C\u00f4te D'Ivoire (Ivory Coast)",
+    "capital": "Yamoussoukro",
+    "phoneCode": "225",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "XOF",
+      "name": "Communaut\u00e9 Financi\u00e8re Africaine Francs"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Ivory Coast.jpg",
+    "languages": [
+      {
+        "code": "fr",
+        "name": "French"
+      }
+    ]
+  },
+  {
+    "isoCode": "CK",
+    "name": "Cook Islands",
+    "capital": "Avarua",
+    "phoneCode": "682",
+    "continent": {
+      "code": "OC",
+      "name": "Ocenania"
+    },
+    "currency": {
+      "code": "NZD",
+      "name": "New Zealand Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Cook_Islands.jpg",
+    "languages": []
+  },
+  {
+    "isoCode": "CL",
+    "name": "Chile",
+    "capital": "Santiago",
+    "phoneCode": "56",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "CLP",
+      "name": "Pesos"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Chile.jpg",
+    "languages": [
+      {
+        "code": "es",
+        "name": "Spanish"
+      }
+    ]
+  },
+  {
+    "isoCode": "CM",
+    "name": "Cameroon",
+    "capital": "Yaounde",
+    "phoneCode": "237",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "XAF",
+      "name": "Communaut\u00e9 Financi\u00e8re Africaine Francs"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Cameroon.jpg",
+    "languages": [
+      {
+        "code": "fr",
+        "name": "French"
+      }
+    ]
+  },
+  {
+    "isoCode": "CN",
+    "name": "China",
+    "capital": "Beijing",
+    "phoneCode": "86",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "CNY",
+      "name": "Yuan Renminbi"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/China.jpg",
+    "languages": [
+      {
+        "code": "zh",
+        "name": "Chinese"
+      }
+    ]
+  },
+  {
+    "isoCode": "CO",
+    "name": "Colombia",
+    "capital": "Bogota",
+    "phoneCode": "57",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "COP",
+      "name": "Pesos"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Colombia.jpg",
+    "languages": [
+      {
+        "code": "es",
+        "name": "Spanish"
+      }
+    ]
+  },
+  {
+    "isoCode": "CR",
+    "name": "Costa Rica",
+    "capital": "San Jose",
+    "phoneCode": "506",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "CRC",
+      "name": "Colones"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Costa_Rica.jpg",
+    "languages": [
+      {
+        "code": "es",
+        "name": "Spanish"
+      }
+    ]
+  },
+  {
+    "isoCode": "CU",
+    "name": "Cuba",
+    "capital": "Havana",
+    "phoneCode": "53",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "CUP",
+      "name": "Pesos"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Cuba.jpg",
+    "languages": [
+      {
+        "code": "es",
+        "name": "Spanish"
+      }
+    ]
+  },
+  {
+    "isoCode": "CV",
+    "name": "Cape Verde",
+    "capital": "Cidade de Praia",
+    "phoneCode": "238",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "CVE",
+      "name": "Escudos"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Cape Verde.jpg",
+    "languages": [
+      {
+        "code": "por",
+        "name": "Portuguese"
+      }
+    ]
+  },
+  {
+    "isoCode": "CW",
+    "name": "Cura\u00e7ao",
+    "capital": "Willemstad",
+    "phoneCode": "5999",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "ANG",
+      "name": "Netherlands Antilles Guilders (also called Florins)"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Cura\u00e7ao.png",
+    "languages": [
+      {
+        "code": "eng",
+        "name": "English"
+      },
+      {
+        "code": "nl",
+        "name": "Dutch"
+      },
+      {
+        "code": "pap",
+        "name": "Papiamento"
+      }
+    ]
+  },
+  {
+    "isoCode": "CX",
+    "name": "Chrismas Island",
+    "capital": "Flying Fish Cove",
+    "phoneCode": "672",
+    "continent": {
+      "code": "OC",
+      "name": "Ocenania"
+    },
+    "currency": {
+      "code": "AUD",
+      "name": "Australian Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Christmas_Island.jpg",
+    "languages": []
+  },
+  {
+    "isoCode": "CY",
+    "name": "Cyprus",
+    "capital": "Nicosia",
+    "phoneCode": "357",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "CYP",
+      "name": "Pounds"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Cyprus.jpg",
+    "languages": [
+      {
+        "code": "el",
+        "name": "Greek, Modern (1453-)"
+      }
+    ]
+  },
+  {
+    "isoCode": "CZ",
+    "name": "Czech Republic",
+    "capital": "Prague",
+    "phoneCode": "420",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "CZK",
+      "name": "Koruny"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Czech_Republic.jpg",
+    "languages": [
+      {
+        "code": "cs",
+        "name": "Czech"
+      }
+    ]
+  },
+  {
+    "isoCode": "DE",
+    "name": "Germany",
+    "capital": "Berlin",
+    "phoneCode": "49",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "EUR",
+      "name": "Euro"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Germany.jpg",
+    "languages": [
+      {
+        "code": "de",
+        "name": "German"
+      }
+    ]
+  },
+  {
+    "isoCode": "DJ",
+    "name": "Djibouti",
+    "capital": "Djibouti",
+    "phoneCode": "253",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "DJF",
+      "name": "Francs"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Djibouti.jpg",
+    "languages": [
+      {
+        "code": "ara",
+        "name": "Arabic"
+      }
+    ]
+  },
+  {
+    "isoCode": "DK",
+    "name": "Denmark",
+    "capital": "Copenhagen",
+    "phoneCode": "45",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "DKK",
+      "name": "Kroner"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Denmark.jpg",
+    "languages": [
+      {
+        "code": "dan",
+        "name": "Danish"
+      }
+    ]
+  },
+  {
+    "isoCode": "DM",
+    "name": "Dominica",
+    "capital": "Roseau",
+    "phoneCode": "1",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "XCD",
+      "name": "East Caribbean Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Dominica.jpg",
+    "languages": [
+      {
+        "code": "eng",
+        "name": "English"
+      }
+    ]
+  },
+  {
+    "isoCode": "DO",
+    "name": "Dominican Republic",
+    "capital": "Santo Domingo",
+    "phoneCode": "1",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "DOP",
+      "name": "Pesos"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Dominica.jpg",
+    "languages": [
+      {
+        "code": "es",
+        "name": "Spanish"
+      }
+    ]
+  },
+  {
+    "isoCode": "DZ",
+    "name": "Algeria",
+    "capital": "Algiers",
+    "phoneCode": "213",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "DZD",
+      "name": "Algeria Dinars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Algeria.jpg",
+    "languages": [
+      {
+        "code": "ara",
+        "name": "Arabic"
+      }
+    ]
+  },
+  {
+    "isoCode": "EC",
+    "name": "Ecuador",
+    "capital": "Quito",
+    "phoneCode": "593",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "USD",
+      "name": "Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Ecuador.jpg",
+    "languages": [
+      {
+        "code": "es",
+        "name": "Spanish"
+      }
+    ]
+  },
+  {
+    "isoCode": "EE",
+    "name": "Estonia",
+    "capital": "Tallinn",
+    "phoneCode": "372",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "EEK",
+      "name": "Krooni"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Estonia.jpg",
+    "languages": [
+      {
+        "code": "est",
+        "name": "Estonian"
+      }
+    ]
+  },
+  {
+    "isoCode": "EG",
+    "name": "Egypt",
+    "capital": "Cairo",
+    "phoneCode": "20",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "EGP",
+      "name": "Pounds"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Egypt.jpg",
+    "languages": [
+      {
+        "code": "ara",
+        "name": "Arabic"
+      }
+    ]
+  },
+  {
+    "isoCode": "EH",
+    "name": "Western Sahara",
+    "capital": "La\u00e2youne",
+    "phoneCode": "212",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "AED",
+      "name": "Dirhams"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Western_Sahara.jpg",
+    "languages": [
+      {
+        "code": "ara",
+        "name": "Arabic"
+      },
+      {
+        "code": "es",
+        "name": "Spanish"
+      }
+    ]
+  },
+  {
+    "isoCode": "ER",
+    "name": "Eritrea",
+    "capital": "Asmara",
+    "phoneCode": "291",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "ERN",
+      "name": "Nakfa"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Eritrea.jpg",
+    "languages": [
+      {
+        "code": "tir",
+        "name": "Tigrinya"
+      }
+    ]
+  },
+  {
+    "isoCode": "ES",
+    "name": "Spain",
+    "capital": "Madrid",
+    "phoneCode": "34",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "EUR",
+      "name": "Euro"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Spain.jpg",
+    "languages": [
+      {
+        "code": "es",
+        "name": "Spanish"
+      }
+    ]
+  },
+  {
+    "isoCode": "ET",
+    "name": "Ethiopia",
+    "capital": "Addis Ababa",
+    "phoneCode": "251",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "ETB",
+      "name": "Birr"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Ethiopia.jpg",
+    "languages": [
+      {
+        "code": "amh",
+        "name": "Amharic"
+      }
+    ]
+  },
+  {
+    "isoCode": "FI",
+    "name": "Finland",
+    "capital": "Helsinki",
+    "phoneCode": "358",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "EUR",
+      "name": "Euro"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Finland.jpg",
+    "languages": [
+      {
+        "code": "fin",
+        "name": "Finnish"
+      }
+    ]
+  },
+  {
+    "isoCode": "FJ",
+    "name": "Fiji",
+    "capital": "Suva",
+    "phoneCode": "679",
+    "continent": {
+      "code": "OC",
+      "name": "Ocenania"
+    },
+    "currency": {
+      "code": "FJD",
+      "name": "Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Fiji.jpg",
+    "languages": [
+      {
+        "code": "fij",
+        "name": "Fijian"
+      }
+    ]
+  },
+  {
+    "isoCode": "FK",
+    "name": "Falkand Islands (Malvinas)",
+    "capital": "Port Stanley",
+    "phoneCode": "500",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "FKP",
+      "name": "Falklands Pounds"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Falkland_Islands.Jpg",
+    "languages": []
+  },
+  {
+    "isoCode": "FM",
+    "name": "Micronesia  (Federa States of)",
+    "capital": "Kolonia",
+    "phoneCode": "691",
+    "continent": {
+      "code": "OC",
+      "name": "Ocenania"
+    },
+    "currency": {
+      "code": "USD",
+      "name": "Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Micrones.jpg",
+    "languages": [
+      {
+        "code": "eng",
+        "name": "English"
+      }
+    ]
+  },
+  {
+    "isoCode": "FO",
+    "name": "Faroe Islands",
+    "capital": "Torshavn",
+    "phoneCode": "298",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "DKK",
+      "name": "Kroner"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Faroe_Islands.jpg",
+    "languages": []
+  },
+  {
+    "isoCode": "FR",
+    "name": "France",
+    "capital": "Paris",
+    "phoneCode": "33",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "EUR",
+      "name": "Euro"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/France.jpg",
+    "languages": [
+      {
+        "code": "fr",
+        "name": "French"
+      }
+    ]
+  },
+  {
+    "isoCode": "GA",
+    "name": "Gabon",
+    "capital": "Libreville",
+    "phoneCode": "241",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "XAF",
+      "name": "Communaut\u00e9 Financi\u00e8re Africaine Francs"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Gabon.jpg",
+    "languages": [
+      {
+        "code": "fr",
+        "name": "French"
+      }
+    ]
+  },
+  {
+    "isoCode": "GB",
+    "name": "United Kingdom",
+    "capital": "London",
+    "phoneCode": "44",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "GBP",
+      "name": "Great Brittain Pounds"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/United_Kingdom.jpg",
+    "languages": [
+      {
+        "code": "eng",
+        "name": "English"
+      }
+    ]
+  },
+  {
+    "isoCode": "GD",
+    "name": "Grenada",
+    "capital": "St. George's",
+    "phoneCode": "1",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "XCD",
+      "name": "East Caribbean Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Grenada.jpg",
+    "languages": [
+      {
+        "code": "eng",
+        "name": "English"
+      }
+    ]
+  },
+  {
+    "isoCode": "GE",
+    "name": "Georgia",
+    "capital": "Tbilisi",
+    "phoneCode": "995",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "GEL",
+      "name": "Lari"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Georgia.jpg",
+    "languages": [
+      {
+        "code": "ka",
+        "name": "Georgian"
+      }
+    ]
+  },
+  {
+    "isoCode": "GF",
+    "name": "French Guiana",
+    "capital": "Cayenne",
+    "phoneCode": "594",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "EUR",
+      "name": "Euro"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/French_Guiana.jpg",
+    "languages": []
+  },
+  {
+    "isoCode": "GH",
+    "name": "Ghana",
+    "capital": "Accra",
+    "phoneCode": "233",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "GHC",
+      "name": "Cedis"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Ghana.jpg",
+    "languages": [
+      {
+        "code": "eng",
+        "name": "English"
+      }
+    ]
+  },
+  {
+    "isoCode": "GI",
+    "name": "Gibraltar",
+    "capital": "Gibraltar",
+    "phoneCode": "350",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "GIP",
+      "name": "Gibraltar Pounds"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Gibraltar.jpg",
+    "languages": []
+  },
+  {
+    "isoCode": "GL",
+    "name": "Greenland",
+    "capital": "Nuuk",
+    "phoneCode": "299",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "DKK",
+      "name": "Kroner"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Greenland.jpg",
+    "languages": []
+  },
+  {
+    "isoCode": "GM",
+    "name": "Gambia",
+    "capital": "Banjul",
+    "phoneCode": "220",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "GMD",
+      "name": "Dalasi"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Gambia.jpg",
+    "languages": [
+      {
+        "code": "eng",
+        "name": "English"
+      }
+    ]
+  },
+  {
+    "isoCode": "GN",
+    "name": "Guinea",
+    "capital": "Conakry",
+    "phoneCode": "224",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "GNF",
+      "name": "Francs"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Guinea.jpg",
+    "languages": [
+      {
+        "code": "fr",
+        "name": "French"
+      }
+    ]
+  },
+  {
+    "isoCode": "GP",
+    "name": "Guadeloupe",
+    "capital": "Basse-Terre",
+    "phoneCode": "590",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "EUR",
+      "name": "Euro"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Guadeloupe.jpg",
+    "languages": []
+  },
+  {
+    "isoCode": "GQ",
+    "name": "Equatorial Guinea",
+    "capital": "Bata",
+    "phoneCode": "240",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "XAF",
+      "name": "Communaut\u00e9 Financi\u00e8re Africaine Francs"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Equatorial_Guinea.jpg",
+    "languages": []
+  },
+  {
+    "isoCode": "GR",
+    "name": "Greece",
+    "capital": "Athens",
+    "phoneCode": "30",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "EUR",
+      "name": "Euro"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Greece.jpg",
+    "languages": [
+      {
+        "code": "el",
+        "name": "Greek, Modern (1453-)"
+      }
+    ]
+  },
+  {
+    "isoCode": "GS",
+    "name": "South Georgia & South Sandwich Islands",
+    "capital": "Grytviken",
+    "phoneCode": "0",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "GBP",
+      "name": "Great Brittain Pounds"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/South_Georgia_And_South_Sandwich_Islands.jpg",
+    "languages": []
+  },
+  {
+    "isoCode": "GT",
+    "name": "Guatemala",
+    "capital": "Guatemala",
+    "phoneCode": "502",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "GTQ",
+      "name": "Quetzales"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Guatemal.jpg",
+    "languages": [
+      {
+        "code": "es",
+        "name": "Spanish"
+      }
+    ]
+  },
+  {
+    "isoCode": "GU",
+    "name": "Guam",
+    "capital": "Hagatna (Agana)",
+    "phoneCode": "671",
+    "continent": {
+      "code": "OC",
+      "name": "Ocenania"
+    },
+    "currency": {
+      "code": "USD",
+      "name": "Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Guam.jpg",
+    "languages": []
+  },
+  {
+    "isoCode": "GW",
+    "name": "Guinea-Bissau",
+    "capital": "Bissau",
+    "phoneCode": "225",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "XOF",
+      "name": "Communaut\u00e9 Financi\u00e8re Africaine Francs"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Guinea-B.jpg",
+    "languages": [
+      {
+        "code": "por",
+        "name": "Portuguese"
+      }
+    ]
+  },
+  {
+    "isoCode": "GY",
+    "name": "Guyana",
+    "capital": "Georgetown",
+    "phoneCode": "592",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "GYD",
+      "name": "Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Guyana.jpg",
+    "languages": [
+      {
+        "code": "eng",
+        "name": "English"
+      }
+    ]
+  },
+  {
+    "isoCode": "HK",
+    "name": "Hong Kong",
+    "capital": "Hong Kong",
+    "phoneCode": "852",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "HKD",
+      "name": "Hong Kong Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Hong_Kong.jpg",
+    "languages": []
+  },
+  {
+    "isoCode": "HM",
+    "name": "Heard Island And McDonald Islands",
+    "capital": "-",
+    "phoneCode": "0",
+    "continent": {
+      "code": "OC",
+      "name": "Ocenania"
+    },
+    "currency": {
+      "code": null,
+      "name": "No Universal Currency"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Heard_Island_And_McDonald_Islands.jpg",
+    "languages": []
+  },
+  {
+    "isoCode": "HN",
+    "name": "Honduras",
+    "capital": "Tegucigalpa",
+    "phoneCode": "504",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "HNL",
+      "name": "Lempiras"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Honduras.jpg",
+    "languages": [
+      {
+        "code": "es",
+        "name": "Spanish"
+      }
+    ]
+  },
+  {
+    "isoCode": "HR",
+    "name": "Croatia",
+    "capital": "Zagreb",
+    "phoneCode": "385",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "HRK",
+      "name": "Kuna"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Croatia.jpg",
+    "languages": [
+      {
+        "code": "scr",
+        "name": "Serbo-Croatian"
+      }
+    ]
+  },
+  {
+    "isoCode": "HT",
+    "name": "Haiti",
+    "capital": "Port-Au-Prince",
+    "phoneCode": "509",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "HTG",
+      "name": "Gourdes"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Haiti.jpg",
+    "languages": [
+      {
+        "code": "fr",
+        "name": "French"
+      }
+    ]
+  },
+  {
+    "isoCode": "HU",
+    "name": "Hungary",
+    "capital": "Budapest",
+    "phoneCode": "36",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "HUF",
+      "name": "Forint"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Hungary.jpg",
+    "languages": [
+      {
+        "code": "hun",
+        "name": "Hungarian"
+      }
+    ]
+  },
+  {
+    "isoCode": "ID",
+    "name": "Indonesia",
+    "capital": "Jakarta",
+    "phoneCode": "62",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "IDR",
+      "name": "Rupiahs"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Indonesi.jpg",
+    "languages": [
+      {
+        "code": "ind",
+        "name": "Indonesian"
+      }
+    ]
+  },
+  {
+    "isoCode": "IE",
+    "name": "Ireland",
+    "capital": "Dublin",
+    "phoneCode": "353",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "EUR",
+      "name": "Euro"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Ireland.jpg",
+    "languages": [
+      {
+        "code": "ga",
+        "name": "Irish"
+      }
+    ]
+  },
+  {
+    "isoCode": "IL",
+    "name": "Israel",
+    "capital": "Jerusalem",
+    "phoneCode": "972",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "ILS",
+      "name": "New Shekels"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Israel.jpg",
+    "languages": [
+      {
+        "code": "heb",
+        "name": "Hebrew"
+      }
+    ]
+  },
+  {
+    "isoCode": "IN",
+    "name": "India",
+    "capital": "New Delhi",
+    "phoneCode": "91",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "INR",
+      "name": "Rupees"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/India.jpg",
+    "languages": [
+      {
+        "code": "hin",
+        "name": "Hindi"
+      }
+    ]
+  },
+  {
+    "isoCode": "IO",
+    "name": "British Indian Ocean Territory",
+    "capital": "Diego Garcia",
+    "phoneCode": "246",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "GBP",
+      "name": "Great Brittain Pounds"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/British_Indian_Ocean_Territory.jpg",
+    "languages": []
+  },
+  {
+    "isoCode": "IQ",
+    "name": "Iraq",
+    "capital": "Baghdad",
+    "phoneCode": "964",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "IQD",
+      "name": "Dinars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Iraq.jpg",
+    "languages": [
+      {
+        "code": "ara",
+        "name": "Arabic"
+      }
+    ]
+  },
+  {
+    "isoCode": "IR",
+    "name": "Iran",
+    "capital": "Tehran",
+    "phoneCode": "98",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "IRR",
+      "name": "Rials"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Iran.jpg",
+    "languages": [
+      {
+        "code": "fa",
+        "name": "Persian"
+      }
+    ]
+  },
+  {
+    "isoCode": "IS",
+    "name": "Iceland",
+    "capital": "Reykjavik",
+    "phoneCode": "354",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "ISK",
+      "name": "Kronur"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Iceland.jpg",
+    "languages": [
+      {
+        "code": "is",
+        "name": "Icelandic"
+      }
+    ]
+  },
+  {
+    "isoCode": "IT",
+    "name": "Italy",
+    "capital": "Rome",
+    "phoneCode": "39",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "EUR",
+      "name": "Euro"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Italy.jpg",
+    "languages": [
+      {
+        "code": "ita",
+        "name": "Italian"
+      }
+    ]
+  },
+  {
+    "isoCode": "JM",
+    "name": "Jamaica",
+    "capital": "Kingston",
+    "phoneCode": "1",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "JMD",
+      "name": "Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Jamaica.jpg",
+    "languages": [
+      {
+        "code": "eng",
+        "name": "English"
+      }
+    ]
+  },
+  {
+    "isoCode": "JO",
+    "name": "Jordan",
+    "capital": "Amman",
+    "phoneCode": "962",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "JOD",
+      "name": "Dinars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Jordan.jpg",
+    "languages": [
+      {
+        "code": "ara",
+        "name": "Arabic"
+      }
+    ]
+  },
+  {
+    "isoCode": "JP",
+    "name": "Japan",
+    "capital": "Tokyo",
+    "phoneCode": "81",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "JPY",
+      "name": "Yen"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Japan.jpg",
+    "languages": [
+      {
+        "code": "jpn",
+        "name": "Japanese"
+      }
+    ]
+  },
+  {
+    "isoCode": "KE",
+    "name": "Kenya",
+    "capital": "Nairobi",
+    "phoneCode": "254",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "KES",
+      "name": "Shillings"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Kenya.jpg",
+    "languages": [
+      {
+        "code": "swa",
+        "name": "Swahili"
+      }
+    ]
+  },
+  {
+    "isoCode": "KG",
+    "name": "Kyrgyzstan",
+    "capital": "Bishkek",
+    "phoneCode": "996",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "KGS",
+      "name": "Soms"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Kyrgyzst.jpg",
+    "languages": [
+      {
+        "code": "kir",
+        "name": "Kirghiz"
+      }
+    ]
+  },
+  {
+    "isoCode": "KH",
+    "name": "Cambodia",
+    "capital": "Phnom Penh",
+    "phoneCode": "855",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "KHR",
+      "name": "Riels"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Cambodia.jpg",
+    "languages": [
+      {
+        "code": "khm",
+        "name": "Khmer"
+      }
+    ]
+  },
+  {
+    "isoCode": "KI",
+    "name": "Kiribati",
+    "capital": "Tarawa",
+    "phoneCode": "686",
+    "continent": {
+      "code": "OC",
+      "name": "Ocenania"
+    },
+    "currency": {
+      "code": "AUD",
+      "name": "Australian Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Kiribati.jpg",
+    "languages": [
+      {
+        "code": "eng",
+        "name": "English"
+      }
+    ]
+  },
+  {
+    "isoCode": "KM",
+    "name": "Comoros",
+    "capital": "Moroni",
+    "phoneCode": "269",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "KMF",
+      "name": "Francs"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Comoros.jpg",
+    "languages": [
+      {
+        "code": "swa",
+        "name": "Swahili"
+      }
+    ]
+  },
+  {
+    "isoCode": "KN",
+    "name": "St. Kitts & Nevis",
+    "capital": "Basseterre",
+    "phoneCode": "1",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "XCD",
+      "name": "East Caribbean Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/St._Kitts_Nevis.jpg",
+    "languages": [
+      {
+        "code": "eng",
+        "name": "English"
+      }
+    ]
+  },
+  {
+    "isoCode": "KP",
+    "name": "North Korea",
+    "capital": "Pyongyang",
+    "phoneCode": "850",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "KPW",
+      "name": "Won"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/North_Korea.jpg",
+    "languages": [
+      {
+        "code": "kor",
+        "name": "Korean"
+      }
+    ]
+  },
+  {
+    "isoCode": "KR",
+    "name": "South Korea",
+    "capital": "Seoul",
+    "phoneCode": "82",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "KRW",
+      "name": "Won"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/South_Korea.jpg",
+    "languages": [
+      {
+        "code": "kor",
+        "name": "Korean"
+      }
+    ]
+  },
+  {
+    "isoCode": "KW",
+    "name": "Kuwait",
+    "capital": "Kuwait",
+    "phoneCode": "965",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "KWD",
+      "name": "Dinars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Kuwait.jpg",
+    "languages": [
+      {
+        "code": "ara",
+        "name": "Arabic"
+      }
+    ]
+  },
+  {
+    "isoCode": "KY",
+    "name": "Cayman Islands",
+    "capital": "George Town",
+    "phoneCode": "345",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "KYD",
+      "name": "Cayman Island Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Cayman_Islands.jpg",
+    "languages": []
+  },
+  {
+    "isoCode": "KZ",
+    "name": "Kazakhstan",
+    "capital": "Almaty",
+    "phoneCode": "7",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "KZT",
+      "name": "Tenge"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Kazakhst.jpg",
+    "languages": [
+      {
+        "code": "kaz",
+        "name": "Kazakh"
+      }
+    ]
+  },
+  {
+    "isoCode": "LA",
+    "name": "Laos",
+    "capital": "Vientiane",
+    "phoneCode": "856",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "LAK",
+      "name": "Kips"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Laos.jpg",
+    "languages": [
+      {
+        "code": "lao",
+        "name": "Lao"
+      }
+    ]
+  },
+  {
+    "isoCode": "LB",
+    "name": "Lebanon",
+    "capital": "Beirut",
+    "phoneCode": "961",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "LBP",
+      "name": "Pounds"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Lebanon.jpg",
+    "languages": [
+      {
+        "code": "ara",
+        "name": "Arabic"
+      }
+    ]
+  },
+  {
+    "isoCode": "LC",
+    "name": "St. Lucia",
+    "capital": "Castries",
+    "phoneCode": "1",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "XCD",
+      "name": "East Caribbean Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/St._Lucia.jpg",
+    "languages": [
+      {
+        "code": "eng",
+        "name": "English"
+      }
+    ]
+  },
+  {
+    "isoCode": "LI",
+    "name": "Liechtenstein",
+    "capital": "Vaduz",
+    "phoneCode": "423",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "CHF",
+      "name": "Swiss Francs"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Liechten.jpg",
+    "languages": [
+      {
+        "code": "de",
+        "name": "German"
+      }
+    ]
+  },
+  {
+    "isoCode": "LK",
+    "name": "Sri Lanka",
+    "capital": "Colombo",
+    "phoneCode": "94",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "LKR",
+      "name": "Rupees"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Sri_Lanka.jpg",
+    "languages": [
+      {
+        "code": "sin",
+        "name": "Singhalese"
+      }
+    ]
+  },
+  {
+    "isoCode": "LR",
+    "name": "Liberia",
+    "capital": "Monrovia",
+    "phoneCode": "231",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "LRD",
+      "name": "Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Liberia.jpg",
+    "languages": [
+      {
+        "code": "eng",
+        "name": "English"
+      }
+    ]
+  },
+  {
+    "isoCode": "LS",
+    "name": "Lesotho",
+    "capital": "Masera",
+    "phoneCode": "266",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "LSL",
+      "name": "Maloti"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Lesotho.jpg",
+    "languages": [
+      {
+        "code": "st",
+        "name": "Sesotho"
+      }
+    ]
+  },
+  {
+    "isoCode": "LT",
+    "name": "Lithuania",
+    "capital": "Vilnius",
+    "phoneCode": "370",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "LTL",
+      "name": "Litai"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Lithuania.jpg",
+    "languages": [
+      {
+        "code": "lit",
+        "name": "Lithuanian"
+      }
+    ]
+  },
+  {
+    "isoCode": "LU",
+    "name": "Luxembourg",
+    "capital": "Luxembourg",
+    "phoneCode": "352",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "EUR",
+      "name": "Euro"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Luxembourg.jpg",
+    "languages": [
+      {
+        "code": "ltz",
+        "name": "Letzeburgesch"
+      }
+    ]
+  },
+  {
+    "isoCode": "LV",
+    "name": "Latvia",
+    "capital": "Riga",
+    "phoneCode": "371",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "LVL",
+      "name": "Lati"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Latvia.jpg",
+    "languages": [
+      {
+        "code": "lav",
+        "name": "Latvian"
+      }
+    ]
+  },
+  {
+    "isoCode": "LY",
+    "name": "Libyan Arab Jamahiriya",
+    "capital": "Tripoli",
+    "phoneCode": "218",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "LYD",
+      "name": "Dinars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Libyan.jpg",
+    "languages": [
+      {
+        "code": "ara",
+        "name": "Arabic"
+      }
+    ]
+  },
+  {
+    "isoCode": "MA",
+    "name": "Morocco",
+    "capital": "Rabat",
+    "phoneCode": "212",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "MAD",
+      "name": "Morocco Dirhams"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Morocco.jpg",
+    "languages": [
+      {
+        "code": "ara",
+        "name": "Arabic"
+      }
+    ]
+  },
+  {
+    "isoCode": "MC",
+    "name": "Monaco",
+    "capital": "Monaco",
+    "phoneCode": "377",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "EUR",
+      "name": "Euro"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Monaco.jpg",
+    "languages": [
+      {
+        "code": "fr",
+        "name": "French"
+      }
+    ]
+  },
+  {
+    "isoCode": "MD",
+    "name": "Moldova, Republic of",
+    "capital": "Kishinev",
+    "phoneCode": "373",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "MDL",
+      "name": "Lei"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Moldova.jpg",
+    "languages": [
+      {
+        "code": "ro",
+        "name": "Romanian"
+      }
+    ]
+  },
+  {
+    "isoCode": "ME",
+    "name": "Montenegro",
+    "capital": "Podgorica",
+    "phoneCode": "382",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "EUR",
+      "name": "Euro"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Montenegro.png",
+    "languages": [
+      {
+        "code": "cnr",
+        "name": "Montenegrin"
+      }
+    ]
+  },
+  {
+    "isoCode": "MF",
+    "name": "Collectivity of Saint Martin",
+    "capital": "Marigot",
+    "phoneCode": "590",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "EUR",
+      "name": "Euro"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/France.jpg",
+    "languages": [
+      {
+        "code": "fr",
+        "name": "French"
+      }
+    ]
+  },
+  {
+    "isoCode": "MG",
+    "name": "Madagascar",
+    "capital": "Antananarivo",
+    "phoneCode": "261",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "MGA",
+      "name": "Ariary"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Madagascar.jpg",
+    "languages": [
+      {
+        "code": "mlg",
+        "name": "Malagasy"
+      }
+    ]
+  },
+  {
+    "isoCode": "MH",
+    "name": "Marshall Islands",
+    "capital": "Majuro",
+    "phoneCode": "692",
+    "continent": {
+      "code": "OC",
+      "name": "Ocenania"
+    },
+    "currency": {
+      "code": "USD",
+      "name": "Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Marshall.jpg",
+    "languages": [
+      {
+        "code": "eng",
+        "name": "English"
+      }
+    ]
+  },
+  {
+    "isoCode": "MK",
+    "name": "Macedonia  (former YR)",
+    "capital": "Skopje",
+    "phoneCode": "389",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "MKD",
+      "name": "Denars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Macedoni.jpg",
+    "languages": [
+      {
+        "code": "mk",
+        "name": "Macedonian"
+      }
+    ]
+  },
+  {
+    "isoCode": "ML",
+    "name": "Mali",
+    "capital": "Bamako",
+    "phoneCode": "223",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "XOF",
+      "name": "Communaut\u00e9 Financi\u00e8re Africaine Francs"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Mali.jpg",
+    "languages": [
+      {
+        "code": "fr",
+        "name": "French"
+      }
+    ]
+  },
+  {
+    "isoCode": "MM",
+    "name": "Myanmar (Burma)",
+    "capital": "Rangoon",
+    "phoneCode": "95",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "MMK",
+      "name": "Kyats"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Myanmar.jpg",
+    "languages": [
+      {
+        "code": "my",
+        "name": "Burmese"
+      }
+    ]
+  },
+  {
+    "isoCode": "MN",
+    "name": "Mongolia",
+    "capital": "Ulan Bator",
+    "phoneCode": "976",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "MNT",
+      "name": "Tugriks"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Mongolia.jpg",
+    "languages": [
+      {
+        "code": "mon",
+        "name": "Mongolian"
+      }
+    ]
+  },
+  {
+    "isoCode": "MO",
+    "name": "Macao",
+    "capital": "Macao",
+    "phoneCode": "853",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "MOP",
+      "name": "Patacas"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Macao.jpg",
+    "languages": []
+  },
+  {
+    "isoCode": "MP",
+    "name": "Northern Mariana Islands",
+    "capital": "Saipan",
+    "phoneCode": "670",
+    "continent": {
+      "code": "OC",
+      "name": "Ocenania"
+    },
+    "currency": {
+      "code": "USD",
+      "name": "Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Northern_Mariana_Islands.jpg",
+    "languages": []
+  },
+  {
+    "isoCode": "MQ",
+    "name": "Martinique",
+    "capital": "Fort-de-France",
+    "phoneCode": "596",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "EUR",
+      "name": "Euro"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Martinique.jpg",
+    "languages": []
+  },
+  {
+    "isoCode": "MR",
+    "name": "Mauritania",
+    "capital": "Novakchott",
+    "phoneCode": "222",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "MRO",
+      "name": "Ouguiyas"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Mauritan.jpg",
+    "languages": [
+      {
+        "code": "fr",
+        "name": "French"
+      }
+    ]
+  },
+  {
+    "isoCode": "MS",
+    "name": "Montserrat",
+    "capital": "Plymouth",
+    "phoneCode": "664",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "XCD",
+      "name": "East Caribbean Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Montserrat.jpg",
+    "languages": []
+  },
+  {
+    "isoCode": "MT",
+    "name": "Malta",
+    "capital": "Valetta",
+    "phoneCode": "356",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "MTL",
+      "name": "Liri"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Malta.jpg",
+    "languages": [
+      {
+        "code": "mlt",
+        "name": "Maltese"
+      }
+    ]
+  },
+  {
+    "isoCode": "MU",
+    "name": "Mauritius",
+    "capital": "Port Louis",
+    "phoneCode": "230",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "MUR",
+      "name": "Rupees"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Mauritiu.jpg",
+    "languages": [
+      {
+        "code": "eng",
+        "name": "English"
+      }
+    ]
+  },
+  {
+    "isoCode": "MV",
+    "name": "Maldives (Maladive Ilands)",
+    "capital": "Male",
+    "phoneCode": "960",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "MVR",
+      "name": "Rufiyaa"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Maldives.jpg",
+    "languages": [
+      {
+        "code": "div",
+        "name": "Divehi"
+      }
+    ]
+  },
+  {
+    "isoCode": "MW",
+    "name": "Malawi",
+    "capital": "Lilongwe",
+    "phoneCode": "265",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "MWK",
+      "name": "Kwachas"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Malawi.jpg",
+    "languages": [
+      {
+        "code": "eng",
+        "name": "English"
+      }
+    ]
+  },
+  {
+    "isoCode": "MX",
+    "name": "Mexico",
+    "capital": "Mexico City",
+    "phoneCode": "52",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "MXN",
+      "name": "Pesos"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Mexico.jpg",
+    "languages": [
+      {
+        "code": "es",
+        "name": "Spanish"
+      }
+    ]
+  },
+  {
+    "isoCode": "MY",
+    "name": "Malaysia",
+    "capital": "Kuala Lumpur",
+    "phoneCode": "60",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "MYR",
+      "name": "Ringgits"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Malaysia.jpg",
+    "languages": [
+      {
+        "code": "ms",
+        "name": "Malay"
+      }
+    ]
+  },
+  {
+    "isoCode": "MZ",
+    "name": "Mozambique",
+    "capital": "Maputo",
+    "phoneCode": "258",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "MZM",
+      "name": "Meticais"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Mozambiq.jpg",
+    "languages": [
+      {
+        "code": "por",
+        "name": "Portuguese"
+      }
+    ]
+  },
+  {
+    "isoCode": "NA",
+    "name": "Namibia",
+    "capital": "Windhoek",
+    "phoneCode": "264",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "NAD",
+      "name": "Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Namibia.jpg",
+    "languages": [
+      {
+        "code": "afr",
+        "name": "Afrikaans"
+      }
+    ]
+  },
+  {
+    "isoCode": "NC",
+    "name": "New Caledonia",
+    "capital": "Noum\u00e9a",
+    "phoneCode": "687",
+    "continent": {
+      "code": "OC",
+      "name": "Ocenania"
+    },
+    "currency": {
+      "code": "XPF",
+      "name": "Comptoirs Fran\u00feais du Pacifique Francs"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/New_Caledonia.jpg",
+    "languages": []
+  },
+  {
+    "isoCode": "NE",
+    "name": "Niger",
+    "capital": "Niamey",
+    "phoneCode": "227",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "XOF",
+      "name": "Communaut\u00e9 Financi\u00e8re Africaine Francs"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Niger.jpg",
+    "languages": [
+      {
+        "code": "fr",
+        "name": "French"
+      }
+    ]
+  },
+  {
+    "isoCode": "NF",
+    "name": "Norfolk Island",
+    "capital": "Kingston",
+    "phoneCode": "672",
+    "continent": {
+      "code": "OC",
+      "name": "Ocenania"
+    },
+    "currency": {
+      "code": "AUD",
+      "name": "Australian Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Norfolk_Island.jpg",
+    "languages": []
+  },
+  {
+    "isoCode": "NG",
+    "name": "Nigeria",
+    "capital": "Abuja",
+    "phoneCode": "234",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "NGN",
+      "name": "Nairas"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Nigeria.jpg",
+    "languages": [
+      {
+        "code": "eng",
+        "name": "English"
+      },
+      {
+        "code": "hau",
+        "name": "Hausa"
+      },
+      {
+        "code": "ibo",
+        "name": "Igbo"
+      },
+      {
+        "code": "yor",
+        "name": "Yoruba"
+      }
+    ]
+  },
+  {
+    "isoCode": "NI",
+    "name": "Nicaragua",
+    "capital": "Managua",
+    "phoneCode": "234",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "NIO",
+      "name": "Cordobas"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Nicaragua.jpg",
+    "languages": [
+      {
+        "code": "es",
+        "name": "Spanish"
+      }
+    ]
+  },
+  {
+    "isoCode": "NL",
+    "name": "Netherlands",
+    "capital": "Amsterdam",
+    "phoneCode": "31",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "EUR",
+      "name": "Euro"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Netherlands.jpg",
+    "languages": [
+      {
+        "code": "fry",
+        "name": "Frisian"
+      },
+      {
+        "code": "nl",
+        "name": "Dutch"
+      }
+    ]
+  },
+  {
+    "isoCode": "NO",
+    "name": "Norway",
+    "capital": "Oslo",
+    "phoneCode": "47",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "NOK",
+      "name": "Krone"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Norway.jpg",
+    "languages": [
+      {
+        "code": "nor",
+        "name": "Norwegian"
+      }
+    ]
+  },
+  {
+    "isoCode": "NP",
+    "name": "Nepal",
+    "capital": "Katmandu",
+    "phoneCode": "977",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "NPR",
+      "name": "Nepal Rupees"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Nepal.jpg",
+    "languages": [
+      {
+        "code": "nep",
+        "name": "Nepali"
+      }
+    ]
+  },
+  {
+    "isoCode": "NR",
+    "name": "Nauru",
+    "capital": "Nauru",
+    "phoneCode": "674",
+    "continent": {
+      "code": "OC",
+      "name": "Ocenania"
+    },
+    "currency": {
+      "code": "AUD",
+      "name": "Australian Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Nauru.jpg",
+    "languages": [
+      {
+        "code": "nau",
+        "name": "Nauru"
+      }
+    ]
+  },
+  {
+    "isoCode": "NU",
+    "name": "Niue",
+    "capital": "Alofi",
+    "phoneCode": "683",
+    "continent": {
+      "code": "OC",
+      "name": "Ocenania"
+    },
+    "currency": {
+      "code": "NZD",
+      "name": "New Zealand Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Niue.jpg",
+    "languages": []
+  },
+  {
+    "isoCode": "NZ",
+    "name": "New Zealand",
+    "capital": "Wellington",
+    "phoneCode": "64",
+    "continent": {
+      "code": "OC",
+      "name": "Ocenania"
+    },
+    "currency": {
+      "code": "NZD",
+      "name": "New Zealand Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/New_Zealand.jpg",
+    "languages": [
+      {
+        "code": "eng",
+        "name": "English"
+      }
+    ]
+  },
+  {
+    "isoCode": "OM",
+    "name": "Oman",
+    "capital": "Muscat",
+    "phoneCode": "968",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "OMR",
+      "name": "Rials"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Oman.jpg",
+    "languages": [
+      {
+        "code": "ara",
+        "name": "Arabic"
+      }
+    ]
+  },
+  {
+    "isoCode": "PA",
+    "name": "Panama",
+    "capital": "Panama",
+    "phoneCode": "507",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "PAB",
+      "name": "Balboa"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Panama.jpg",
+    "languages": [
+      {
+        "code": "es",
+        "name": "Spanish"
+      }
+    ]
+  },
+  {
+    "isoCode": "PE",
+    "name": "Peru",
+    "capital": "Lima",
+    "phoneCode": "51",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "PEN",
+      "name": "Nuevos Soles"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Peru.jpg",
+    "languages": [
+      {
+        "code": "es",
+        "name": "Spanish"
+      }
+    ]
+  },
+  {
+    "isoCode": "PF",
+    "name": "French Polynesia",
+    "capital": "Papeete",
+    "phoneCode": "687",
+    "continent": {
+      "code": "OC",
+      "name": "Ocenania"
+    },
+    "currency": {
+      "code": "XPF",
+      "name": "Comptoirs Fran\u00feais du Pacifique Francs"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/French_Polynesia.jpg",
+    "languages": []
+  },
+  {
+    "isoCode": "PG",
+    "name": "Papua-New Guinea",
+    "capital": "Port Moresby",
+    "phoneCode": "675",
+    "continent": {
+      "code": "OC",
+      "name": "Ocenania"
+    },
+    "currency": {
+      "code": "PGK",
+      "name": "Kina"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Papua-New_Guinea.jpg",
+    "languages": [
+      {
+        "code": "fr",
+        "name": "French"
+      }
+    ]
+  },
+  {
+    "isoCode": "PH",
+    "name": "Philippines",
+    "capital": "Manila",
+    "phoneCode": "63",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "PHP",
+      "name": "Pesos"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Philippi.jpg",
+    "languages": [
+      {
+        "code": "fil",
+        "name": "Filipino"
+      }
+    ]
+  },
+  {
+    "isoCode": "PK",
+    "name": "Pakistan",
+    "capital": "Islamabad",
+    "phoneCode": "92",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "PKR",
+      "name": "Rupees"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Pakistan.jpg",
+    "languages": [
+      {
+        "code": "urd",
+        "name": "Urdu"
+      }
+    ]
+  },
+  {
+    "isoCode": "PL",
+    "name": "Poland",
+    "capital": "Warsaw",
+    "phoneCode": "48",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "PLN",
+      "name": "Zlotych"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Poland.jpg",
+    "languages": [
+      {
+        "code": "pol",
+        "name": "Polish"
+      }
+    ]
+  },
+  {
+    "isoCode": "PM",
+    "name": "Saint Pierre And Micquelon",
+    "capital": "Saint Pierre",
+    "phoneCode": "508",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "EUR",
+      "name": "Euro"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Saint_Pierre_And_Micquelon.jpg",
+    "languages": [
+      {
+        "code": "fr",
+        "name": "French"
+      }
+    ]
+  },
+  {
+    "isoCode": "PN",
+    "name": "Pitcairn",
+    "capital": "Adamstown",
+    "phoneCode": "672",
+    "continent": {
+      "code": "OC",
+      "name": "Ocenania"
+    },
+    "currency": {
+      "code": "NZD",
+      "name": "New Zealand Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Pitcairn.jpg",
+    "languages": []
+  },
+  {
+    "isoCode": "PR",
+    "name": "Puerto Rico",
+    "capital": "San Juan",
+    "phoneCode": "787",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "USD",
+      "name": "Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Puerto_Rico.jpg",
+    "languages": [
+      {
+        "code": "es",
+        "name": "Spanish"
+      }
+    ]
+  },
+  {
+    "isoCode": "PS",
+    "name": "Palestinian Territory, Occupied",
+    "capital": "East Jerusalem",
+    "phoneCode": "970",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "JMD",
+      "name": "Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Palestinian_Territory.jpg",
+    "languages": [
+      {
+        "code": "ara",
+        "name": "Arabic"
+      }
+    ]
+  },
+  {
+    "isoCode": "PT",
+    "name": "Portugal",
+    "capital": "Lisbon",
+    "phoneCode": "351",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "EUR",
+      "name": "Euro"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Portugal.jpg",
+    "languages": [
+      {
+        "code": "por",
+        "name": "Portuguese"
+      }
+    ]
+  },
+  {
+    "isoCode": "PW",
+    "name": "Palau",
+    "capital": "Koror",
+    "phoneCode": "680",
+    "continent": {
+      "code": "OC",
+      "name": "Ocenania"
+    },
+    "currency": {
+      "code": "USD",
+      "name": "Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Palau.jpg",
+    "languages": [
+      {
+        "code": "eng",
+        "name": "English"
+      }
+    ]
+  },
+  {
+    "isoCode": "PY",
+    "name": "Paraguay",
+    "capital": "Asuncion",
+    "phoneCode": "595",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "PYG",
+      "name": "Guarani"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Paraguay.jpg",
+    "languages": [
+      {
+        "code": "es",
+        "name": "Spanish"
+      }
+    ]
+  },
+  {
+    "isoCode": "QA",
+    "name": "Quatar",
+    "capital": "Doha",
+    "phoneCode": "974",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "QAR",
+      "name": "Rials"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Quatar.jpg",
+    "languages": [
+      {
+        "code": "ara",
+        "name": "Arabic"
+      }
+    ]
+  },
+  {
+    "isoCode": "RE",
+    "name": "Reunion",
+    "capital": "Saint-Denis",
+    "phoneCode": "262",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "EUR",
+      "name": "Euro"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Reunion.jpg",
+    "languages": [
+      {
+        "code": "cpf",
+        "name": "Creoles and Pidgins, French-based (Other)"
+      },
+      {
+        "code": "fr",
+        "name": "French"
+      }
+    ]
+  },
+  {
+    "isoCode": "RO",
+    "name": "Romania",
+    "capital": "Bucharest",
+    "phoneCode": "40",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "RON",
+      "name": "New Lei"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Romania.jpg",
+    "languages": [
+      {
+        "code": "ro",
+        "name": "Romanian"
+      }
+    ]
+  },
+  {
+    "isoCode": "RS",
+    "name": "Serbia",
+    "capital": "Belgrade",
+    "phoneCode": "381",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "RSD",
+      "name": "Serbian Dinar"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Serbia.png",
+    "languages": [
+      {
+        "code": "sr",
+        "name": "Serbian"
+      }
+    ]
+  },
+  {
+    "isoCode": "RU",
+    "name": "Russian Federation",
+    "capital": "Moscow",
+    "phoneCode": "7",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "RUB",
+      "name": "Rubles"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Russian.jpg",
+    "languages": [
+      {
+        "code": "rus",
+        "name": "Russian"
+      }
+    ]
+  },
+  {
+    "isoCode": "RW",
+    "name": "Rwanda",
+    "capital": "Kigali",
+    "phoneCode": "250",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "RWF",
+      "name": "Rwanda Francs"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Rwanda.jpg",
+    "languages": [
+      {
+        "code": "kin",
+        "name": "Kinyarwanda"
+      }
+    ]
+  },
+  {
+    "isoCode": "SA",
+    "name": "Saudi Arabia",
+    "capital": "Riyadh",
+    "phoneCode": "966",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "SAR",
+      "name": "Riyals"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Saudia_Arabia.jpg",
+    "languages": [
+      {
+        "code": "ara",
+        "name": "Arabic"
+      }
+    ]
+  },
+  {
+    "isoCode": "SB",
+    "name": "Solomon Islands",
+    "capital": "Honiara",
+    "phoneCode": "677",
+    "continent": {
+      "code": "OC",
+      "name": "Ocenania"
+    },
+    "currency": {
+      "code": "SBD",
+      "name": "Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Solomon.jpg",
+    "languages": [
+      {
+        "code": "eng",
+        "name": "English"
+      }
+    ]
+  },
+  {
+    "isoCode": "SC",
+    "name": "Seychelles",
+    "capital": "Victoria",
+    "phoneCode": "248",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "SCR",
+      "name": "Rupees"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Seychell.jpg",
+    "languages": [
+      {
+        "code": "eng",
+        "name": "English"
+      }
+    ]
+  },
+  {
+    "isoCode": "SD",
+    "name": "Sudan",
+    "capital": "Khartoum",
+    "phoneCode": "249",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "SDD",
+      "name": "Dinars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Sudan.jpg",
+    "languages": [
+      {
+        "code": "ara",
+        "name": "Arabic"
+      }
+    ]
+  },
+  {
+    "isoCode": "SE",
+    "name": "Sweden",
+    "capital": "Stockholm",
+    "phoneCode": "46",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "SEK",
+      "name": "Kronor"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Sweden.jpg",
+    "languages": [
+      {
+        "code": "sv",
+        "name": "Swedish"
+      }
+    ]
+  },
+  {
+    "isoCode": "SG",
+    "name": "Singapore",
+    "capital": "Singapore",
+    "phoneCode": "65",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "SGD",
+      "name": "Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Singapore.jpg",
+    "languages": [
+      {
+        "code": "ms",
+        "name": "Malay"
+      }
+    ]
+  },
+  {
+    "isoCode": "SH",
+    "name": "Saint Helena, Ascension and Tristan da Cunha",
+    "capital": "Jamestown",
+    "phoneCode": "290",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "SHP",
+      "name": "Pounds"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Saint_Helena.jpg",
+    "languages": [
+      {
+        "code": "eng",
+        "name": "English"
+      }
+    ]
+  },
+  {
+    "isoCode": "SI",
+    "name": "Slovenia",
+    "capital": "Ljubljana",
+    "phoneCode": "386",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "SIT",
+      "name": "Tolars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Slovenia.jpg",
+    "languages": [
+      {
+        "code": "sk",
+        "name": "Slovak"
+      }
+    ]
+  },
+  {
+    "isoCode": "SJ",
+    "name": "Svalbard And Jan Mayen",
+    "capital": "Svalbard And Jan Mayen",
+    "phoneCode": "790",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "NOK",
+      "name": "Krone"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Svalbard_And_Jan_Mayen.jpg",
+    "languages": [
+      {
+        "code": "nor",
+        "name": "Norwegian"
+      },
+      {
+        "code": "rus",
+        "name": "Russian"
+      }
+    ]
+  },
+  {
+    "isoCode": "SK",
+    "name": "Slovakia",
+    "capital": "Bratislava",
+    "phoneCode": "421",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "SKK",
+      "name": "Koruny"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Slovakia.jpg",
+    "languages": [
+      {
+        "code": "sk",
+        "name": "Slovak"
+      }
+    ]
+  },
+  {
+    "isoCode": "SL",
+    "name": "Sierra Leone",
+    "capital": "Freetown",
+    "phoneCode": "232",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "SLL",
+      "name": "Leones"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Sierra_Leone.jpg",
+    "languages": [
+      {
+        "code": "eng",
+        "name": "English"
+      }
+    ]
+  },
+  {
+    "isoCode": "SM",
+    "name": "San Marino",
+    "capital": "San Marino",
+    "phoneCode": "378",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "EUR",
+      "name": "Euro"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/San_Marino.jpg",
+    "languages": [
+      {
+        "code": "ita",
+        "name": "Italian"
+      }
+    ]
+  },
+  {
+    "isoCode": "SN",
+    "name": "Senegal",
+    "capital": "Dakar",
+    "phoneCode": "221",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "XOF",
+      "name": "Communaut\u00e9 Financi\u00e8re Africaine Francs"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Senegal.jpg",
+    "languages": [
+      {
+        "code": "fr",
+        "name": "French"
+      }
+    ]
+  },
+  {
+    "isoCode": "SO",
+    "name": "Somalia",
+    "capital": "Mogadishu",
+    "phoneCode": "252",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "SOS",
+      "name": "Shillings"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Somalia.jpg",
+    "languages": [
+      {
+        "code": "som",
+        "name": "Somali"
+      }
+    ]
+  },
+  {
+    "isoCode": "SR",
+    "name": "Suriname",
+    "capital": "Paramaribo",
+    "phoneCode": "597",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "SRD",
+      "name": "Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Suriname.jpg",
+    "languages": [
+      {
+        "code": "nl",
+        "name": "Dutch"
+      }
+    ]
+  },
+  {
+    "isoCode": "ST",
+    "name": "Sao Tome & Principe",
+    "capital": "Sao Tome",
+    "phoneCode": "239",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "STD",
+      "name": "Dobras"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Sao_Tome.jpg",
+    "languages": [
+      {
+        "code": "por",
+        "name": "Portuguese"
+      }
+    ]
+  },
+  {
+    "isoCode": "SV",
+    "name": "El Salvador",
+    "capital": "San Salvador",
+    "phoneCode": "503",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "SVC",
+      "name": "Colones"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/El_Salvador.jpg",
+    "languages": [
+      {
+        "code": "es",
+        "name": "Spanish"
+      }
+    ]
+  },
+  {
+    "isoCode": "SX",
+    "name": "Sint-Maarten",
+    "capital": "Philipsburg",
+    "phoneCode": "1721",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "ANG",
+      "name": "Netherlands Antilles Guilders (also called Florins)"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Sint_Maarten.png",
+    "languages": [
+      {
+        "code": "eng",
+        "name": "English"
+      },
+      {
+        "code": "nl",
+        "name": "Dutch"
+      }
+    ]
+  },
+  {
+    "isoCode": "SY",
+    "name": "Syrian Arab Republic",
+    "capital": "Damascus",
+    "phoneCode": "963",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "SYP",
+      "name": "Pounds"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Syria.jpg",
+    "languages": [
+      {
+        "code": "ara",
+        "name": "Arabic"
+      }
+    ]
+  },
+  {
+    "isoCode": "SZ",
+    "name": "Swaziland",
+    "capital": "Mbabane",
+    "phoneCode": "269",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "SZL",
+      "name": "Emalangeni"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Swazilan.jpg",
+    "languages": [
+      {
+        "code": "eng",
+        "name": "English"
+      }
+    ]
+  },
+  {
+    "isoCode": "TC",
+    "name": "Turks And Caicos Islands",
+    "capital": "Cockburn Town, Grand Turk",
+    "phoneCode": "649",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "USD",
+      "name": "Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Turks_And_Caicos_Islands.jpg",
+    "languages": [
+      {
+        "code": "eng",
+        "name": "English"
+      }
+    ]
+  },
+  {
+    "isoCode": "TD",
+    "name": "Chad",
+    "capital": "N'Djamena",
+    "phoneCode": "235",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "XAF",
+      "name": "Communaut\u00e9 Financi\u00e8re Africaine Francs"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Chad.jpg",
+    "languages": [
+      {
+        "code": "fr",
+        "name": "French"
+      }
+    ]
+  },
+  {
+    "isoCode": "TF",
+    "name": "French Southern Territories",
+    "capital": "-",
+    "phoneCode": "0",
+    "continent": {
+      "code": "AN",
+      "name": "Antarctica"
+    },
+    "currency": {
+      "code": "EUR",
+      "name": "Euro"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/French_Southern_Territories.jpg",
+    "languages": [
+      {
+        "code": "fr",
+        "name": "French"
+      }
+    ]
+  },
+  {
+    "isoCode": "TG",
+    "name": "Togo",
+    "capital": "Lome",
+    "phoneCode": "228",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "XOF",
+      "name": "Communaut\u00e9 Financi\u00e8re Africaine Francs"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Togo.jpg",
+    "languages": [
+      {
+        "code": "ewe",
+        "name": "Ewe"
+      }
+    ]
+  },
+  {
+    "isoCode": "TH",
+    "name": "Thailand",
+    "capital": "Bangkok",
+    "phoneCode": "66",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "THB",
+      "name": "Baht"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Thailand.jpg",
+    "languages": [
+      {
+        "code": "tha",
+        "name": "Thai"
+      }
+    ]
+  },
+  {
+    "isoCode": "TJ",
+    "name": "Tajikistan",
+    "capital": "Dushanbe",
+    "phoneCode": "992",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "RUB",
+      "name": "Rubles"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Tajikistan.jpg",
+    "languages": [
+      {
+        "code": "tgk",
+        "name": "Tajik"
+      }
+    ]
+  },
+  {
+    "isoCode": "TK",
+    "name": "Tokelau",
+    "capital": "-",
+    "phoneCode": "690",
+    "continent": {
+      "code": "OC",
+      "name": "Ocenania"
+    },
+    "currency": {
+      "code": "NZD",
+      "name": "New Zealand Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Tokelau.jpg",
+    "languages": [
+      {
+        "code": "tok",
+        "name": "Polli (Tokelau)"
+      }
+    ]
+  },
+  {
+    "isoCode": "TL",
+    "name": "Timor-Leste",
+    "capital": "Dili",
+    "phoneCode": "670",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "USD",
+      "name": "Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Timor-Leste.jpg",
+    "languages": [
+      {
+        "code": "por",
+        "name": "Portuguese"
+      }
+    ]
+  },
+  {
+    "isoCode": "TM",
+    "name": "Turkmenistan",
+    "capital": "Ashkhabad",
+    "phoneCode": "993",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "TMM",
+      "name": "Manats"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Turkmeni.jpg",
+    "languages": [
+      {
+        "code": "tuk",
+        "name": "Turkmen"
+      }
+    ]
+  },
+  {
+    "isoCode": "TN",
+    "name": "Tunisia",
+    "capital": "Tunis",
+    "phoneCode": "216",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "TND",
+      "name": "Dinars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Tunisia.jpg",
+    "languages": [
+      {
+        "code": "ara",
+        "name": "Arabic"
+      }
+    ]
+  },
+  {
+    "isoCode": "TO",
+    "name": "Tonga",
+    "capital": "Nuku'alofa",
+    "phoneCode": "676",
+    "continent": {
+      "code": "OC",
+      "name": "Ocenania"
+    },
+    "currency": {
+      "code": "TOP",
+      "name": "Pa'anga"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Tonga.jpg",
+    "languages": [
+      {
+        "code": "tog",
+        "name": "Tonga (Nyasa)"
+      }
+    ]
+  },
+  {
+    "isoCode": "TR",
+    "name": "Turkey",
+    "capital": "Ankara",
+    "phoneCode": "90",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "TRY",
+      "name": "New Lira"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Turkey.jpg",
+    "languages": [
+      {
+        "code": "tur",
+        "name": "Turkish"
+      }
+    ]
+  },
+  {
+    "isoCode": "TT",
+    "name": "Trinidad & Tobago",
+    "capital": "Port of Spain",
+    "phoneCode": "1",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "TTD",
+      "name": "Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Trinidad.jpg",
+    "languages": [
+      {
+        "code": "eng",
+        "name": "English"
+      }
+    ]
+  },
+  {
+    "isoCode": "TV",
+    "name": "Tuvalu",
+    "capital": "Funafuti",
+    "phoneCode": "688",
+    "continent": {
+      "code": "OC",
+      "name": "Ocenania"
+    },
+    "currency": {
+      "code": "TVD",
+      "name": "Tuvalu Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Tuvalu.jpg",
+    "languages": [
+      {
+        "code": "tyv",
+        "name": "Tuvinian"
+      }
+    ]
+  },
+  {
+    "isoCode": "TW",
+    "name": "Taiwan",
+    "capital": "Taipei",
+    "phoneCode": "886",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "TWD",
+      "name": "New Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Taiwan.jpg",
+    "languages": [
+      {
+        "code": "zh",
+        "name": "Chinese"
+      }
+    ]
+  },
+  {
+    "isoCode": "TZ",
+    "name": "Tanzania",
+    "capital": "Dar es Salaam",
+    "phoneCode": "255",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "TZS",
+      "name": "Shillings"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Tanzania.jpg",
+    "languages": [
+      {
+        "code": "swa",
+        "name": "Swahili"
+      }
+    ]
+  },
+  {
+    "isoCode": "UA",
+    "name": "Ukraine",
+    "capital": "Kiev",
+    "phoneCode": "380",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "UAH",
+      "name": "Hryvnia"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Ukraine.jpg",
+    "languages": [
+      {
+        "code": "ukr",
+        "name": "Ukrainian"
+      }
+    ]
+  },
+  {
+    "isoCode": "UG",
+    "name": "Uganda",
+    "capital": "Kampala",
+    "phoneCode": "256",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "UGX",
+      "name": "Shillings"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Uganda.jpg",
+    "languages": [
+      {
+        "code": "eng",
+        "name": "English"
+      }
+    ]
+  },
+  {
+    "isoCode": "UM",
+    "name": "United States Minor Outlying Islands",
+    "capital": "-",
+    "phoneCode": "808",
+    "continent": {
+      "code": "OC",
+      "name": "Ocenania"
+    },
+    "currency": {
+      "code": "USD",
+      "name": "Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/United_States_Minor_Outlying_Islands.jpg",
+    "languages": []
+  },
+  {
+    "isoCode": "US",
+    "name": "United States",
+    "capital": "Washington",
+    "phoneCode": "1",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "USD",
+      "name": "Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/USA.jpg",
+    "languages": [
+      {
+        "code": "eng",
+        "name": "English"
+      }
+    ]
+  },
+  {
+    "isoCode": "UY",
+    "name": "Uruguay",
+    "capital": "Montevideo",
+    "phoneCode": "598",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "UYU",
+      "name": "Pesos"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Uruguay.jpg",
+    "languages": [
+      {
+        "code": "es",
+        "name": "Spanish"
+      }
+    ]
+  },
+  {
+    "isoCode": "UZ",
+    "name": "Uzbekistan",
+    "capital": "Tashkent",
+    "phoneCode": "998",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "UZS",
+      "name": "Sums"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Uzbekistan.jpg",
+    "languages": [
+      {
+        "code": "uzb",
+        "name": "Uzbek"
+      }
+    ]
+  },
+  {
+    "isoCode": "VA",
+    "name": "Vatican City",
+    "capital": "Vatican City",
+    "phoneCode": "39",
+    "continent": {
+      "code": "EU",
+      "name": "Europe"
+    },
+    "currency": {
+      "code": "EUR",
+      "name": "Euro"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Vatican.jpg",
+    "languages": [
+      {
+        "code": "ita",
+        "name": "Italian"
+      }
+    ]
+  },
+  {
+    "isoCode": "VC",
+    "name": "St. Vincent & Grenadines",
+    "capital": "Kingstown",
+    "phoneCode": "1",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "XCD",
+      "name": "East Caribbean Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/St._Vincent-Grenadines.jpg",
+    "languages": [
+      {
+        "code": "eng",
+        "name": "English"
+      }
+    ]
+  },
+  {
+    "isoCode": "VE",
+    "name": "Venezuela",
+    "capital": "Caracas",
+    "phoneCode": "58",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "VEB",
+      "name": "Bolivares"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Venezuela.jpg",
+    "languages": [
+      {
+        "code": "es",
+        "name": "Spanish"
+      }
+    ]
+  },
+  {
+    "isoCode": "VG",
+    "name": "Virgin Islands, British",
+    "capital": "Road Town",
+    "phoneCode": "1284",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "USD",
+      "name": "Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Virgin_Islands_British.jpg",
+    "languages": []
+  },
+  {
+    "isoCode": "VI",
+    "name": "Virgin Islands, U.S.",
+    "capital": "Charlotte Amalie",
+    "phoneCode": "340",
+    "continent": {
+      "code": "AM",
+      "name": "The Americas"
+    },
+    "currency": {
+      "code": "USD",
+      "name": "Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Virgin_Islands_U.S.jpg",
+    "languages": [
+      {
+        "code": "eng",
+        "name": "English"
+      },
+      {
+        "code": "es",
+        "name": "Spanish"
+      },
+      {
+        "code": "fr",
+        "name": "French"
+      }
+    ]
+  },
+  {
+    "isoCode": "VN",
+    "name": "Vietnam",
+    "capital": "Hanoi",
+    "phoneCode": "84",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "VND",
+      "name": "Dong"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Vietnam.jpg",
+    "languages": [
+      {
+        "code": "vie",
+        "name": "Vietnamese"
+      }
+    ]
+  },
+  {
+    "isoCode": "VU",
+    "name": "Vanuatu",
+    "capital": "Port Vila",
+    "phoneCode": "678",
+    "continent": {
+      "code": "OC",
+      "name": "Ocenania"
+    },
+    "currency": {
+      "code": "VUV",
+      "name": "Vatu"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Vanuatu.jpg",
+    "languages": [
+      {
+        "code": "eng",
+        "name": "English"
+      }
+    ]
+  },
+  {
+    "isoCode": "WF",
+    "name": "Wallis And Futuna",
+    "capital": "Mata-Utu",
+    "phoneCode": "685",
+    "continent": {
+      "code": "OC",
+      "name": "Ocenania"
+    },
+    "currency": {
+      "code": "XPF",
+      "name": "Comptoirs Fran\u00feais du Pacifique Francs"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Wallis_And_Futuna.jpg",
+    "languages": [
+      {
+        "code": "fr",
+        "name": "French"
+      }
+    ]
+  },
+  {
+    "isoCode": "WS",
+    "name": "Western Samoa",
+    "capital": "Apia",
+    "phoneCode": "685",
+    "continent": {
+      "code": "OC",
+      "name": "Ocenania"
+    },
+    "currency": {
+      "code": "WST",
+      "name": "Tala"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Western.jpg",
+    "languages": [
+      {
+        "code": "ara",
+        "name": "Arabic"
+      }
+    ]
+  },
+  {
+    "isoCode": "YE",
+    "name": "Yemen",
+    "capital": "Sanaa",
+    "phoneCode": "967",
+    "continent": {
+      "code": "AS",
+      "name": "Asia"
+    },
+    "currency": {
+      "code": "YER",
+      "name": "Rials"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Yemen.jpg",
+    "languages": [
+      {
+        "code": "ara",
+        "name": "Arabic"
+      }
+    ]
+  },
+  {
+    "isoCode": "YT",
+    "name": "Mayotte",
+    "capital": "Mamoudzou",
+    "phoneCode": "269",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "EUR",
+      "name": "Euro"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Mayotte.jpg",
+    "languages": [
+      {
+        "code": "fr",
+        "name": "French"
+      }
+    ]
+  },
+  {
+    "isoCode": "ZA",
+    "name": "South Africa",
+    "capital": "Cape Town",
+    "phoneCode": "27",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "ZAR",
+      "name": "South Africa Rands"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/South_Africa.jpg",
+    "languages": [
+      {
+        "code": "eng",
+        "name": "English"
+      }
+    ]
+  },
+  {
+    "isoCode": "ZM",
+    "name": "Zambia",
+    "capital": "Lusaka",
+    "phoneCode": "260",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "ZMK",
+      "name": "Kwacha"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Zambia.jpg",
+    "languages": [
+      {
+        "code": "eng",
+        "name": "English"
+      }
+    ]
+  },
+  {
+    "isoCode": "ZW",
+    "name": "Zimbabwe",
+    "capital": "Harare",
+    "phoneCode": "263",
+    "continent": {
+      "code": "AF",
+      "name": "Africa"
+    },
+    "currency": {
+      "code": "ZWD",
+      "name": "Zimbabwe Dollars"
+    },
+    "flagUrl": "http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Zimbabwe.jpg",
+    "languages": [
+      {
+        "code": "eng",
+        "name": "English"
+      }
+    ]
+  }
+]

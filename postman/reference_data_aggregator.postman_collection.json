@@ -1,0 +1,843 @@
+{
+  "info": {
+    "_postman_id": "55afc948-492e-4b91-ba6d-9bfe5f3d6806",
+    "name": "Reference Data Aggregation Service (RDAS)",
+    "description": "Postman Collection for Reference Data Aggregation Service (RDAS).\n\nThis collection maps all the endpoints of the Reference Data Aggregation Service, including pagination, filtering, conditional requests with ETags, health checks, metrics, and error handling verification. All request paths are dynamic and use the `{{baseUrl}}` variable.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Reference Data",
+      "description": "Endpoints to query countries, currencies, continents, and languages.",
+      "item": [
+        {
+          "name": "Countries",
+          "description": "Endpoints relating to country reference data, supporting searching, sorting, pagination, and ETag-based conditional caching.",
+          "item": [
+            {
+              "name": "List Countries (Paginated & Sorted)",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/api/v1/countries?page=0&size=20&sortBy=name&sortDir=asc",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "countries"
+                  ],
+                  "query": [
+                    {
+                      "key": "page",
+                      "value": "0",
+                      "description": "Page number (0-indexed)"
+                    },
+                    {
+                      "key": "size",
+                      "value": "20",
+                      "description": "Page size (1-100)"
+                    },
+                    {
+                      "key": "sortBy",
+                      "value": "name",
+                      "description": "Field to sort by (name, isoCode, capital, phoneCode, continentCode, currencyCode)"
+                    },
+                    {
+                      "key": "sortDir",
+                      "value": "asc",
+                      "description": "Sort direction (asc, desc)"
+                    }
+                  ]
+                },
+                "description": "Retrieves a paginated list of countries. Results are enveloped with metadata including the data timestamp (`dataAsOf`) and staleness indicator (`stale`)."
+              },
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      "pm.test(\"Status code is 200\", function () {",
+                      "    pm.response.to.have.status(200);",
+                      "});",
+                      "",
+                      "pm.test(\"Response is in enveloped format\", function () {",
+                      "    const jsonData = pm.response.json();",
+                      "    pm.expect(jsonData).to.have.property(\"dataAsOf\");",
+                      "    pm.expect(jsonData).to.have.property(\"stale\");",
+                      "    pm.expect(jsonData).to.have.property(\"data\");",
+                      "    pm.expect(jsonData.data).to.have.property(\"content\");",
+                      "    pm.expect(jsonData.data.content).to.be.an(\"array\");",
+                      "});",
+                      "",
+                      "pm.test(\"Verify ETag header is present\", function () {",
+                      "    pm.response.to.have.header(\"ETag\");",
+                      "});"
+                    ],
+                    "type": "text/javascript"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Search Countries by Name",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/api/v1/countries?name=Kenya",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "countries"
+                  ],
+                  "query": [
+                    {
+                      "key": "name",
+                      "value": "Kenya",
+                      "description": "Partial or exact matching name (case-insensitive)"
+                    }
+                  ]
+                },
+                "description": "Searches for countries by name."
+              },
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      "pm.test(\"Status code is 200\", function () {",
+                      "    pm.response.to.have.status(200);",
+                      "});",
+                      "",
+                      "pm.test(\"Search results contain matches\", function () {",
+                      "    const jsonData = pm.response.json();",
+                      "    pm.expect(jsonData.data.content.length).to.be.above(0);",
+                      "    pm.expect(jsonData.data.content[0].name.toLowerCase()).to.include(\"kenya\");",
+                      "});"
+                    ],
+                    "type": "text/javascript"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Filter Countries by Continent",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/api/v1/countries?continent=AF",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "countries"
+                  ],
+                  "query": [
+                    {
+                      "key": "continent",
+                      "value": "AF",
+                      "description": "Continent code (e.g. AF, EU, AS, NA, SA, OC, AN)"
+                    }
+                  ]
+                },
+                "description": "Filters countries to only show those belonging to the specified continent."
+              },
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      "pm.test(\"Status code is 200\", function () {",
+                      "    pm.response.to.have.status(200);",
+                      "});",
+                      "",
+                      "pm.test(\"Filtered results match continent code\", function () {",
+                      "    const jsonData = pm.response.json();",
+                      "    jsonData.data.content.forEach(country => {",
+                      "        pm.expect(country.continent.code).to.equal(\"AF\");",
+                      "    });",
+                      "});"
+                    ],
+                    "type": "text/javascript"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Filter Countries by Currency",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/api/v1/countries?currency=KES",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "countries"
+                  ],
+                  "query": [
+                    {
+                      "key": "currency",
+                      "value": "KES",
+                      "description": "3-letter currency ISO code (case-insensitive)"
+                    }
+                  ]
+                },
+                "description": "Filters countries to only show those using the specified currency."
+              },
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      "pm.test(\"Status code is 200\", function () {",
+                      "    pm.response.to.have.status(200);",
+                      "});",
+                      "",
+                      "pm.test(\"Filtered results match currency code\", function () {",
+                      "    const jsonData = pm.response.json();",
+                      "    jsonData.data.content.forEach(country => {",
+                      "        pm.expect(country.currency.code).to.equal(\"KES\");",
+                      "    });",
+                      "});"
+                    ],
+                    "type": "text/javascript"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Filter Countries by Language",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/api/v1/countries?language=swa",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "countries"
+                  ],
+                  "query": [
+                    {
+                      "key": "language",
+                      "value": "swa",
+                      "description": "3-letter language ISO code (case-insensitive)"
+                    }
+                  ]
+                },
+                "description": "Filters countries to only show those that speak the specified language."
+              },
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      "pm.test(\"Status code is 200\", function () {",
+                      "    pm.response.to.have.status(200);",
+                      "});",
+                      "",
+                      "pm.test(\"Filtered results speak the language\", function () {",
+                      "    const jsonData = pm.response.json();",
+                      "    jsonData.data.content.forEach(country => {",
+                      "        const codes = country.languages.map(l => l.code.toLowerCase());",
+                      "        pm.expect(codes).to.include(\"swa\");",
+                      "    });",
+                      "});"
+                    ],
+                    "type": "text/javascript"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Get Country by ISO Code",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/api/v1/countries/KE",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "countries",
+                    "KE"
+                  ]
+                },
+                "description": "Retrieves the full details for a single country by its 2-letter ISO code. Saves the response ETag to a collection variable (`last_etag`) for subsequent caching tests."
+              },
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      "pm.test(\"Status code is 200\", function () {",
+                      "    pm.response.to.have.status(200);",
+                      "});",
+                      "",
+                      "pm.test(\"Country details match request\", function () {",
+                      "    const jsonData = pm.response.json();",
+                      "    pm.expect(jsonData.data.isoCode).to.equal(\"KE\");",
+                      "    pm.expect(jsonData.data.name).to.equal(\"Kenya\");",
+                      "});",
+                      "",
+                      "// Extract ETag and store as collection variable",
+                      "const etag = pm.response.headers.get(\"ETag\");",
+                      "if (etag) {",
+                      "    pm.collectionVariables.set(\"last_etag\", etag);",
+                      "}"
+                    ],
+                    "type": "text/javascript"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Get Country by ISO Code (Conditional - ETag)",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "If-None-Match",
+                    "value": "{{last_etag}}",
+                    "description": "ETag of the cached resource",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/api/v1/countries/KE",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "countries",
+                    "KE"
+                  ]
+                },
+                "description": "Tests ETag conditional requests. Uses the `If-None-Match` header to send the ETag stored in the `last_etag` collection variable. If the cached version is still fresh, the server returns 304 Not Modified."
+              },
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      "pm.test(\"Status code is 304 Not Modified\", function () {",
+                      "    pm.response.to.have.status(304);",
+                      "});"
+                    ],
+                    "type": "text/javascript"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Currencies",
+          "description": "Endpoints relating to currency reference data.",
+          "item": [
+            {
+              "name": "List All Currencies",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/api/v1/currencies",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "currencies"
+                  ]
+                },
+                "description": "Retrieves a flat list of all active currencies in the system for filter discovery. This endpoint is not enveloped."
+              },
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      "pm.test(\"Status code is 200\", function () {",
+                      "    pm.response.to.have.status(200);",
+                      "});",
+                      "",
+                      "pm.test(\"Response is a list of currencies\", function () {",
+                      "    const jsonData = pm.response.json();",
+                      "    pm.expect(jsonData).to.be.an(\"array\");",
+                      "    if (jsonData.length > 0) {",
+                      "        pm.expect(jsonData[0]).to.have.property(\"code\");",
+                      "        pm.expect(jsonData[0]).to.have.property(\"name\");",
+                      "    }",
+                      "});"
+                    ],
+                    "type": "text/javascript"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "List Countries using Currency",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/api/v1/currencies/KES/countries",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "currencies",
+                    "KES",
+                    "countries"
+                  ]
+                },
+                "description": "Retrieves the list of all countries that use a given 3-letter currency code."
+              },
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      "pm.test(\"Status code is 200\", function () {",
+                      "    pm.response.to.have.status(200);",
+                      "});",
+                      "",
+                      "pm.test(\"Response is an array of country objects\", function () {",
+                      "    const jsonData = pm.response.json();",
+                      "    pm.expect(jsonData).to.be.an(\"array\");",
+                      "    jsonData.forEach(country => {",
+                      "        pm.expect(country.currency.code).to.equal(\"KES\");",
+                      "    });",
+                      "});"
+                    ],
+                    "type": "text/javascript"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Continents",
+          "description": "Endpoints relating to continent reference data.",
+          "item": [
+            {
+              "name": "List All Continents",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/api/v1/continents",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "continents"
+                  ]
+                },
+                "description": "Retrieves a flat list of all continents in the system for filter discovery. This endpoint is not enveloped."
+              },
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      "pm.test(\"Status code is 200\", function () {",
+                      "    pm.response.to.have.status(200);",
+                      "});",
+                      "",
+                      "pm.test(\"Response is a list of continents\", function () {",
+                      "    const jsonData = pm.response.json();",
+                      "    pm.expect(jsonData).to.be.an(\"array\");",
+                      "    if (jsonData.length > 0) {",
+                      "        pm.expect(jsonData[0]).to.have.property(\"code\");",
+                      "        pm.expect(jsonData[0]).to.have.property(\"name\");",
+                      "    }",
+                      "});"
+                    ],
+                    "type": "text/javascript"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Languages",
+          "description": "Endpoints relating to language reference data.",
+          "item": [
+            {
+              "name": "List All Languages",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/api/v1/languages",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "languages"
+                  ]
+                },
+                "description": "Retrieves a flat list of all active languages in the system for filter discovery. This endpoint is not enveloped."
+              },
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      "pm.test(\"Status code is 200\", function () {",
+                      "    pm.response.to.have.status(200);",
+                      "});",
+                      "",
+                      "pm.test(\"Response is a list of languages\", function () {",
+                      "    const jsonData = pm.response.json();",
+                      "    pm.expect(jsonData).to.be.an(\"array\");",
+                      "    if (jsonData.length > 0) {",
+                      "        pm.expect(jsonData[0]).to.have.property(\"code\");",
+                      "        pm.expect(jsonData[0]).to.have.property(\"name\");",
+                      "    }",
+                      "});"
+                    ],
+                    "type": "text/javascript"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Health & Metrics",
+      "description": "Spring Boot Actuator endpoints for system observability.",
+      "item": [
+        {
+          "name": "Overall System Health",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/actuator/health",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "actuator",
+                "health"
+              ]
+            },
+            "description": "Checks the overall application health status, including disk space, ping status, and reference data state."
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "",
+                  "pm.test(\"System status is UP\", function () {",
+                  "    const jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.status).to.equal(\"UP\");",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Readiness Probe",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/actuator/health/readiness",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "actuator",
+                "health",
+                "readiness"
+              ]
+            },
+            "description": "K8s readiness probe. Verifies that the internal reference data cache has been successfully populated before routing traffic."
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "",
+                  "pm.test(\"Readiness status is UP\", function () {",
+                  "    const jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.status).to.equal(\"UP\");",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Liveness Probe",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/actuator/health/liveness",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "actuator",
+                "health",
+                "liveness"
+              ]
+            },
+            "description": "K8s liveness probe. Verifies that the application process is alive."
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "",
+                  "pm.test(\"Liveness status is UP\", function () {",
+                  "    const jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.status).to.equal(\"UP\");",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Metrics List",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/actuator/metrics",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "actuator",
+                "metrics"
+              ]
+            },
+            "description": "Lists all available metrics indicators registered in the Micrometer registry."
+          }
+        },
+        {
+          "name": "Prometheus Scraping Endpoint",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/actuator/prometheus",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "actuator",
+                "prometheus"
+              ]
+            },
+            "description": "Exposes performance metrics in Prometheus text format for ingestion."
+          }
+        }
+      ]
+    },
+    {
+      "name": "Validation & Error Cases",
+      "description": "API responses illustrating error patterns, structured in compliance with RFC 9457 `application/problem+json`.",
+      "item": [
+        {
+          "name": "Country Not Found (404)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/countries/ZZ",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "countries",
+                "ZZ"
+              ]
+            },
+            "description": "Demonstrates error payload format when attempting to retrieve a country with a valid code format but that does not exist in the reference database."
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 404\", function () {",
+                  "    pm.response.to.have.status(404);",
+                  "});",
+                  "",
+                  "pm.test(\"Returns RFC 9457 problem JSON\", function () {",
+                  "    pm.response.to.have.header(\"Content-Type\", \"application/problem+json\");",
+                  "    const jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.status).to.equal(404);",
+                  "    pm.expect(jsonData.title).to.equal(\"Country Not Found\");",
+                  "    pm.expect(jsonData.detail).to.include(\"not found\");",
+                  "    pm.expect(jsonData).to.have.property(\"timestamp\");",
+                  "    pm.expect(jsonData).to.have.property(\"instance\");",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Invalid ISO Code Parameter (400)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/countries/KEN",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "countries",
+                "KEN"
+              ]
+            },
+            "description": "Demonstrates input validation constraint mapping. Country ISO codes must be exactly 2 characters."
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 400\", function () {",
+                  "    pm.response.to.have.status(400);",
+                  "});",
+                  "",
+                  "pm.test(\"Returns validation error problem JSON\", function () {",
+                  "    pm.response.to.have.header(\"Content-Type\", \"application/problem+json\");",
+                  "    const jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.status).to.equal(400);",
+                  "    pm.expect(jsonData.title).to.equal(\"Invalid Request Parameter\");",
+                  "    pm.expect(jsonData.detail).to.include(\"isoCode must be exactly 2 letters\");",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Invalid SortBy Parameter (400)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/countries?sortBy=invalid",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "countries"
+              ],
+              "query": [
+                {
+                  "key": "sortBy",
+                  "value": "invalid"
+                }
+              ]
+            },
+            "description": "Demonstrates validation constraint mapping for query parameters. `sortBy` must be one of: name, isoCode, capital, phoneCode, continentCode, currencyCode."
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 400\", function () {",
+                  "    pm.response.to.have.status(400);",
+                  "});",
+                  "",
+                  "pm.test(\"Returns validation error problem JSON\", function () {",
+                  "    pm.response.to.have.header(\"Content-Type\", \"application/problem+json\");",
+                  "    const jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.status).to.equal(400);",
+                  "    pm.expect(jsonData.title).to.equal(\"Invalid Request Parameter\");",
+                  "    pm.expect(jsonData.detail).to.include(\"sortBy must be one of\");",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8080",
+      "type": "string",
+      "description": "Target server URL for RDAS endpoints"
+    },
+    {
+      "key": "last_etag",
+      "value": "",
+      "type": "string",
+      "description": "Stores the ETag of the last successful country request for testing 304 conditional cache validation"
+    }
+  ]
+}
