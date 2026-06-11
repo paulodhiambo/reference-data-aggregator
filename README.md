@@ -124,6 +124,6 @@ Deployment manifests are located in the [k8s/](file:///Users/paul/Documents/vibi
 
 ### Deployment & Troubleshooting Guides
 For detailed steps on building the container image, deploying, and troubleshooting the live cluster environment:
-* **Kubernetes Guide:** [DEPLOYMENT_GUIDE.md](file:///Users/paul/Documents/vibing/reference-data-aggregator/DEPLOYMENT_GUIDE.md) covers full deployment commands, cluster health checks, and detailed operational troubleshooting playbooks.
+* **Kubernetes Guide:** [deployment_and_troubleshooting_guide.md](file:///Users/paul/Documents/vibing/reference-data-aggregator/deployment_and_troubleshooting_guide.md) covers full deployment commands, cluster health checks, and detailed operational troubleshooting playbooks.
 * **Orchestration Script:** [deploy.sh](file:///Users/paul/Documents/vibing/reference-data-aggregator/deploy.sh) builds the Docker image and deploys all resources to the cluster.
 
