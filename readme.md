@@ -8,9 +8,9 @@ RDAS is a production-grade, high-performance, and resilient Spring Boot service 
 
 To help navigate the technical solution design, operations, and discussion deliverables:
 
-* **Solution Architecture Design:** [architecture.md](architecture.md) — Comprehensive technical overview of caching strategies, database-free data processing pipelines, and data flow structures.
-* **Written Engineering Discussion Responses:** [engineering_discussion.md](engineering_discussion.md) — Answers to assessments questions about scaling to 20M+ requests/day, downstream Kafka notifications, S3 shared cache state, and rate-limiting throttles.
-* **Kubernetes Deployment & Troubleshooting Guide:** [deployment_and_troubleshooting_guide.md](deployment_and_troubleshooting_guide.md) — Operational manual detailing cluster validation, containerization settings, resource scaling, and logs diagnosis.
+* **Solution Architecture Design:** [architecture.md](documentation/architecture.md) — Comprehensive technical overview of caching strategies, database-free data processing pipelines, and data flow structures.
+* **Written Engineering Discussion Responses:** [engineering_discussion.md](documentation/engineering_discussion.md) — Answers to assessments questions about scaling to 20M+ requests/day, downstream Kafka notifications, S3 shared cache state, and rate-limiting throttles.
+* **Kubernetes Deployment & Troubleshooting Guide:** [deployment_and_troubleshooting_guide.md](documentation/deployment_and_troubleshooting_guide.md) — Operational manual detailing cluster validation, containerization settings, resource scaling, and logs diagnosis.
 * **Automated Postman Collection Guide:** [postman/README.md](postman/README.md) — Guidelines to set up and execute automated endpoint tests using Newman/Postman.
 * **Orchestration Deployment Script:** [deploy.sh](deploy.sh) — Automates docker image builds and applies all Kubernetes manifests.
 * **Docker Build Script:** [Dockerfile](Dockerfile) — Hardened multi-stage JVM execution environment running as non-root user.
@@ -139,6 +139,6 @@ Deployment manifests are located in the [k8s/](k8s/) directory:
 
 ### Deployment & Troubleshooting Guides
 For detailed steps on building the container image, deploying, and troubleshooting the live cluster environment:
-* **Kubernetes Guide:** [deployment_and_troubleshooting_guide.md](deployment_and_troubleshooting_guide.md) covers full deployment commands, cluster health checks, and detailed operational troubleshooting playbooks.
+* **Kubernetes Guide:** [deployment_and_troubleshooting_guide.md](documentation/deployment_and_troubleshooting_guide.md) covers full deployment commands, cluster health checks, and detailed operational troubleshooting playbooks.
 * **Orchestration Script:** [deploy.sh](deploy.sh) builds the Docker image and deploys all resources to the cluster.
 

@@ -5,7 +5,7 @@
 | **Service** | Reference Data Aggregation Service (RDAS)                                  |
 | **Team**    | Digital Business — LOOP DFS                                                |
 | **Version** | 1.0                                                                        |
-| **Stack**   | Java 21, Spring Boot 4.0.x, Maven, Kubernetes (see [readme.md](readme.md)) |
+| **Stack**   | Java 21, Spring Boot 4.0.x, Maven, Kubernetes (see [readme.md](../readme.md)) |
 
 ---
 
