@@ -76,37 +76,67 @@ The narrow operations (`CapitalCity`, `CountryCurrency`, `FullCountryInfo`, `Cou
 
 ```mermaid
 flowchart TB
+
     subgraph Channels
-        M[Mobile Apps]
-        W[Web Apps]
-        P[Partner APIs]
-        O[Ops Portals]
+        M["Mobile Apps"]
+        W["Web Apps"]
+        P["Partner APIs"]
+        O["Ops Portals"]
     end
 
-    subgraph RDAS["RDAS (Spring Boot, stateless, N replicas)"]
+    subgraph RDAS["RDAS (Spring Boot, Stateless, N Replicas)"]
         direction TB
-        GW[REST API Layer<br/>Controllers + Validation + OpenAPI]
-        EH[Global Error Handler<br/>RFC 9457 Problem Details]
-        QS[Country Query Service<br/>filter / sort / paginate]
-        QC[(Query Result Cache<br/>Caffeine, 10 min TTL)]
-        RDS[Reference Data Store<br/>AtomicReference&lt;Snapshot&gt;]
-        FB[(Snapshot Fallbacks<br/>local disk + bundled baseline)]
-        SCH[Refresh Scheduler<br/>startup warm-up + every 12h<br/>1h retry after failure]
-        RES[Resilience Layer<br/>RateLimiter • Retry • CircuitBreaker]
-        SC[CountryInfo SOAP Adapter<br/>envelope build + XML parse + anti-corruption]
+
+        GW["REST API Layer
+Controllers + Validation + OpenAPI"]
+
+        EH["Global Error Handler
+RFC 9457 Problem Details"]
+
+        QS["Country Query Service
+Filter / Sort / Paginate"]
+
+        QC["Query Result Cache
+Caffeine (10 min TTL)"]
+
+        RDS["Reference Data Store
+AtomicReference Snapshot"]
+
+        FB["Snapshot Fallbacks
+Local Disk + Bundled Baseline"]
+
+        SCH["Refresh Scheduler
+Startup Warm-up + Every 12h
+1h Retry After Failure"]
+
+        RES["Resilience Layer
+RateLimiter • Retry • CircuitBreaker"]
+
+        SC["CountryInfo SOAP Adapter
+Envelope Build + XML Parse
+Anti-Corruption Layer"]
     end
 
-    SOAP[(CountryInfo SOAP Service<br/>3rd party, 100 req/min)]
+    SOAP["CountryInfo SOAP Service
+3rd Party (100 req/min)"]
 
-    M & W & P & O -->|REST/JSON| GW
+    M -->|REST/JSON| GW
+    W -->|REST/JSON| GW
+    P -->|REST/JSON| GW
+    O -->|REST/JSON| GW
+
     GW --> QS
     GW -.-> EH
+
     QS --> QC
     QS --> RDS
+
     SCH --> SC
-    SC --> RES --> SOAP
-    SCH -->|atomic swap| RDS
-    SCH <-->|persist / restore| FB
+    SC --> RES
+    RES --> SOAP
+
+    SCH -->|Atomic Swap| RDS
+    SCH <-->|Persist / Restore| FB
 ```
 
 ### 3.1 Component Responsibilities

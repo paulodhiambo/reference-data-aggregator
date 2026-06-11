@@ -4,7 +4,7 @@ This guide describes how to deploy, verify, and troubleshoot the **Reference Dat
 
 ---
 
-## 🚀 Part 1: Deployment Guide
+## Part 1: Deployment Guide
 
 ### Prerequisites
 1. A running Kubernetes cluster (Minikube, Kind, GKE, EKS, AKS).
@@ -58,7 +58,7 @@ bash deploy.sh
 
 ---
 
-## 🔍 Part 2: Verification Guide
+## Part 2: Verification Guide
 
 To verify that the application has deployed successfully and is ready to serve traffic:
 
@@ -105,7 +105,7 @@ The response should indicate status `UP` for all components, indicating the snap
 
 ---
 
-## 🛠️ Part 3: Troubleshooting Guide
+## Part 3: Troubleshooting Guide
 
 If the application is failing probes, returning errors, or behaving abnormally, follow these troubleshooting routines:
 
