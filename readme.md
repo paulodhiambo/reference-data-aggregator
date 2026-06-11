@@ -72,7 +72,7 @@ RDAS can be configured via standard properties in `application.yml` or through e
 
 ### Prerequisites
 * Java 21 SDK
-* Maven 3.9+
+* Maven 4.0.x
 
 ### Build the Application
 Compile code and run automated JUnit tests:
